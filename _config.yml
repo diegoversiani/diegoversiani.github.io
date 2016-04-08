@@ -14,15 +14,20 @@ sass:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dvlopes.github.io" # the base hostname & protocol for your site
 title: dvlopes
-email: diegoversiani@gmail.com
 description: >
   Full Stack Developer - WordPress Themes Developer
+copyright: Feel free to use what you find in this website, unless noted.
+
+# Owner's Info
+show_email_on_footer: true
+show_phone_on_footer: true
+email: diegoversiani@gmail.com
+phone: +55 31 99350-6848
 owner_profile_img_url: http://www.gravatar.com/avatar/09bde1935a1a7c56c7f6529fdc148956?size=250
 owner_name: Diego Versiani
 owner_title: Full Stack Developer - WordPress Themes Developer
 about_me: >
   About me!
-copyright: Feel free to use what you find in this website, unless noted. 
 
 # Social Networks properties
 show_social_networks: true
@@ -30,7 +35,6 @@ facebook_username: diego.versiani.pires.lopes
 github_username: dvlopes
 twitter_username: diegoversiani
 wordpress_username: diegoversiani
-
 
 # Includes
 include_fontawesome: true
