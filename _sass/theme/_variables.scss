@@ -343,12 +343,12 @@ $container-tablet:             (720px + $grid-gutter-width) !default;
 $container-sm:                 $container-tablet !default;
 
 // Medium screen / desktop
-$container-desktop:            (940px + $grid-gutter-width) !default;
+$container-desktop:            (720px + $grid-gutter-width) !default;
 //** For `$screen-md-min` and up.
 $container-md:                 $container-desktop !default;
 
 // Large screen / wide desktop
-$container-large-desktop:      (1140px + $grid-gutter-width) !default;
+$container-large-desktop:      (720px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
 
@@ -367,7 +367,7 @@ $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             $text-color !default;
 $navbar-default-bg:                $body-bg !default;
-$navbar-default-border:            #ddd !default;
+$navbar-default-border:            transpartent !default;
 
 // Navbar links
 $navbar-default-link-color:                $link-color !default;

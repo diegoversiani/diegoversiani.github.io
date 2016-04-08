@@ -2,3 +2,8 @@
 // Put your awesome design here.
 // --------------------------------------------------
 
+hr {
+  &.small { width: 20%; }
+  &.medium { width: 50%; }
+  &.large { width: 80%; }
+}

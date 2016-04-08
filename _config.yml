@@ -11,14 +11,26 @@ sass:
   style: :compressed
 
 # Site settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://dvlopes.github.io" # the base hostname & protocol for your site
 title: dvlopes
 email: diegoversiani@gmail.com
 description: >
   Full Stack Developer - WordPress Themes Developer
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dvlopes.github.io" # the base hostname & protocol for your site
+owner_profile_img_url: http://www.gravatar.com/avatar/09bde1935a1a7c56c7f6529fdc148956?size=250
+owner_name: Diego Versiani
+owner_title: Full Stack Developer - WordPress Themes Developer
+about_me: >
+  About me!
+copyright: Feel free to use what you find in this website, unless noted. 
 
 # Social Networks properties
+show_social_networks: true
 facebook_username: diego.versiani.pires.lopes
 github_username: dvlopes
-twitter_username: 
+twitter_username: diegoversiani
+wordpress_username: diegoversiani
+
+
+# Includes
+include_fontawesome: true

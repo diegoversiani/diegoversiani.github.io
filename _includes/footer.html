@@ -1,7 +1,27 @@
 <footer id="footer">
-  <div class="container">
+  <div class="container text-center">
     <div class="row">
-      
+      <hr class="medium">
+
+      {% if site.show_social_networks %}
+      <ul class="list-inline">
+        {% if site.facebook_username %}
+        <li><a href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank"><i class="fa fa-facebook fa-fw fa-2x"></i></a></li>
+        {% endif %}
+        {% if site.github_username %}
+        <li><a href="https://github.com/{{ site.github_username }}" target="_blank"><i class="fa fa-github fa-fw fa-2x"></i></a></li>
+        {% endif %}
+        {% if site.twitter_username %}
+        <li><a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="fa fa-twitter fa-fw fa-2x"></i></a></li>
+        {% endif %}
+        {% if site.wordpress_username %}
+        <li><a href="https://profiles.wordpress.org/{{ site.wordpress_username }}" target="_blank"><i class="fa fa-wordpress fa-fw fa-2x"></i></a></li>
+        {% endif %}
+      </ul>
+      {% endif %}
+
+      <small>{{ site.copyright }}</small>
+
     </div>
   </div>
 </footer>
