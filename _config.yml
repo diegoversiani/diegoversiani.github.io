@@ -20,20 +20,37 @@ copyright: Feel free to use what you find in this website, unless noted.
 
 # Owner's Info
 show_email_on_footer: true
-show_phone_on_footer: true
+show_phone_on_footer: false
 email: diegoversiani@gmail.com
-phone: +55 31 99350-6848
+phone: 
 owner_profile_img_url: http://www.gravatar.com/avatar/09bde1935a1a7c56c7f6529fdc148956?size=250
 owner_name: Diego Versiani
-owner_title: Full Stack Developer - WordPress Themes Developer
+owner_title: Web Developer - WordPress Themes Developer
 about_me: >
-  About me!
+  My name is Diego Versiani, and I’m a web developer with a penchant for business management and gamification.
+  <br><br>
+  I like things on their own place and I love to build stuff, it can be code or houses or the interior of 
+  a kombi or just a new tool for whatever I need to do.
+  <br><br>  
+  I’m currently working as a Freelancer. More specifically, I work for 
+  <a href="http://cafe-do.com" target="_blank">café-do digital agency</a> building websites in 
+  <a href="http://jekyllrb.com" target="_blank">Jekyll</a> and <a href="http://wordpress.org" target="_blank">WordPress</a> 
+  and take side jobs.
+  <br><br>
+  Outside of that, I spend sometime working on my side projects, <a href="/portfolio">see my portfolio</a>.
+  <br><br>
+  I also spend my time traveling and and taking care of Matilda's health, baking and fermenting 
+  food in jars. I love food, the kind that nourishes my body and soul! 
+  <br><br>
+  Take a look at my <a href="https://linkedin.com/in/diegoversiani/en" target="_blank">LinkedIn Profile</a>
+  or follow me on this <a href="/blog">this blog</a> 
+  and <a href="http://2heartsakombi.wpdevcloud.com" target="_blank">2 Hearts &amp; a Kombi</a>.
 
 # Social Networks properties
 show_social_networks: true
 facebook_username: diego.versiani.pires.lopes
 github_username: dvlopes
-twitter_username: diegoversiani
+twitter_username: 
 wordpress_username: diegoversiani
 
 # Includes

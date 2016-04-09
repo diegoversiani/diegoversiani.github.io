@@ -2,6 +2,11 @@
 // Put your awesome design here.
 // --------------------------------------------------
 
+// External Links
+#wrapper-content a[target='_blank'] {
+  text-decoration: underline;
+}
+
 hr {
   &.small { width: 20%; }
   &.medium { width: 50%; }
