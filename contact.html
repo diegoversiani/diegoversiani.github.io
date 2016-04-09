@@ -1,0 +1,75 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h3 class="text-center">Contact me</h3>
+
+      <form id="contact-form" class="form-horizontal">
+      <fieldset>
+        <div class="form-group">
+          <label for="contact-name" class="col-lg-3 control-label">name</label>
+          <div class="col-lg-9">
+            <input id="contact-name" name="Nome" type="text" class="form-control" required placeholder="{{ site.contact_form_name_placeholder }}">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email" class="col-lg-3 control-label">email</label>
+          <div class="col-lg-9">
+            <input id="contact-email" name="_replyto" type="text" class="form-control" required  placeholder="{{ site.contact_form_email_placeholder }}">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-message" class="col-lg-3 control-label">message</label>
+          <div class="col-lg-9">
+            <textarea id="contact-message" name="Mensagem:" class="form-control" rows="6" ></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div id="controls" class="text-center">
+            <input type="hidden" name="_subject" value="Contact by dvlopes.github.io">
+            <input type="text" name="_gotcha" class="hidden" />
+            <button id="btn-reset" type="reset" class="btn btn-default">reset</button>
+            <button id="btn-submit" type="submit" class="btn btn-success">send</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <script type="text/javascript">
+      (function() {
+          var $contactForm = jQuery('#contact-form');
+          $contactForm.submit(function(e) {
+              e.preventDefault();
+              jQuery.ajax({
+                  url: 'https://formspree.io/{{ site.email }}',
+                  method: 'POST',
+                  data: $(this).serialize(),
+                  dataType: 'json',
+                  beforeSend: function() {
+                      $contactForm.find('#controls')
+                        .append('<div class="message"><i class="fa fa-circle-o-notch fa-spin"></i><div>')
+                        .find("#btn-submit").prop('disabled', true);
+                  },
+                  success: function(data) {
+                      $contactForm.find('.message').remove();
+                      $contactForm.each(function(){ this.reset(); });
+                      $contactForm
+                        .append('<div class="message alert alert-dismissible alert-success">Message sent!</div>')
+                        .find("#btn-submit").prop('disabled', false);
+                  },
+                  error: function(err) {
+                      $contactForm.find('.message').remove();
+                      $contactForm
+                        .append('<div class="message alert alert-dismissible alert-danger">Ops, there was an error. Please send an e-mail to <a href="mailto:{{ site.email }}>{{ site.email }}</a>".</div>')
+                        .find("#btn-submit").prop('disabled', false);
+                  }
+              });
+          });
+      })();
+    </script>
+    </div>
+  </div>
+</div>
