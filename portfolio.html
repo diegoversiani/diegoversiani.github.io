@@ -9,7 +9,8 @@ layout: default
         <hr class="small">
         <div class="row">
         {% assign count = 0 %}
-        {% for post in site.categories.portfolio limit:4 %}
+        <!-- TODO: paginate -->
+        {% for post in site.categories.portfolio limit:10 %}
           {% assign count = count | plus: 1 %}
             <div class="portfolio-item">
               <img class="thumbnail img-responsive" src="{{ post.featured-image | prepend: site.baseurl }}">

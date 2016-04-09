@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<section id="blog" class="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h2 class="text-center">Blog</h2>
+        <hr class="small">
+        <div class="row">
+        {% assign count = 0 %}
+        <!-- TODO: paginate -->
+        {% for post in site.posts limit:10 %}
+          {% assign count = count | plus: 1 %}
+            <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+              <header>
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                  <h3>{{ post.title }}</h3>
+                </a>
+                <div>{% for category in post.categories %}<span class="label label-info">{{ category | replace:'_',' ' }}</span> {% endfor %}{% for tag in post.tags %}<span class="label label-default">{{ tag | replace:'_',' ' }}</span> {% endfor %}</div>
+              </header>
+              <div class="post-content" itemprop="articleBody">
+                {{ post.excerpt | strip_html | truncate: 160 }}
+              </div>
+            </article>
+        {% endfor %}
+        {% if count == 0 %}
+          <div class="alert alert-info">Nothing to see here yet.</div>
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
