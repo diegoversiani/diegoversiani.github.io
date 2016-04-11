@@ -15,7 +15,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dvlopes.github.io" # the base hostname & protocol for your site
 title: dvlopes
 description: >
-  Full Stack Developer - WordPress Themes Developer
+  My name is Diego Versiani, and I’m a web developer with a penchant for business management and gamification. 
+  I’m currently working as a Freelancer. More specifically, I work for café-do digital agency (cafe-do.com) 
+  coding websites in Jekyll and WordPress and I take side jobs as well.
 copyright: Feel free to use what you find in this website, unless noted.
 
 # Owner's Info
@@ -29,17 +31,17 @@ owner_title: Web Developer - WordPress Themes Developer
 about_me: >
   My name is Diego Versiani, and I’m a web developer with a penchant for business management and gamification.
   <br><br>
-  I like things on their own place and I love to build stuff, it can be code or houses or the interior of 
-  a kombi or just a new tool for whatever I need to do.
-  <br><br>  
-  I’m currently working as a Freelancer. More specifically, I work for 
-  <a href="http://cafe-do.com" target="_blank">café-do digital agency</a> building websites in 
+  I currently work as a Freelancer. More specifically, I work for 
+  <a href="http://cafe-do.com" target="_blank">café-do digital agency</a> coding websites in 
   <a href="http://jekyllrb.com" target="_blank">Jekyll</a> and <a href="http://wordpress.org" target="_blank">WordPress</a> 
   and take side jobs.
   <br><br>
-  Outside of that, I work on my side <a href="/projects">projects</a>.
+  I also work on my side <a href="/projects">projects</a>.
   <br><br>
-  I also spend my time traveling and and taking care of Matilda's health, baking and fermenting 
+  I like things on their own place and I love to build stuff, it can be websites, houses, the interior of 
+  our van (Matilda) or just a new tool for whatever I need to do.
+  <br><br>  
+  I like traveling and taking care of Matilda's health, baking and fermenting 
   food in jars. I love food, the kind that nourishes my body and soul! 
   <br><br>
   Take a look at my <a href="https://linkedin.com/in/diegoversiani/en" target="_blank">LinkedIn Profile</a>

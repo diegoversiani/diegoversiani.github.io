@@ -9,7 +9,7 @@ layout: default
 	    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
 	    <p class="post-categories">
 	    	{% for category in page.categories %}<span class="label label-info">{{ category | replace:'_',' ' }}</span> {% endfor %}
-	    	{% for tag in page.tags %}<span class="label label-success">{{ tag | replace:'_',' ' }}</span> {% endfor %}
+	    	{% for tag in page.tags %}<span class="label label-default">{{ tag | replace:'_',' ' }}</span> {% endfor %}
 	    </p>
       {% if page.featured-image %}
       <div class="featured-image"><img class="img-responsive center-block" src="{{ page.featured-image | prepend: site.baseurl }}"></div>
