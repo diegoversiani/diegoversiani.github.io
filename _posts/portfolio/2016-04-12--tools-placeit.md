@@ -2,10 +2,10 @@
 layout: post
 title:  "Placeit.net"
 date:   2016-03-30
-categories: online_tools
+categories: tools
 tags: jekyll
-featured-image: /images/online_tools/placeit-full.jpg
-thumbnail: /images/online_tools/placeit-thumb.jpg
+featured-image: /images/tools/placeit-full.jpg
+thumbnail: /images/tools/placeit-thumb.jpg
 external_link: http://placeit.net
 ---
 
