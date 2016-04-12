@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<section class="{{ page.category }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="text-center">{{ page.title }}</h2>
+
+        {% unless page.content == '' %}
+          <div class="category-content">{{ page.content }}</div>
+        {% endunless %}
+
+        <hr class="small">
+
+        {% if page.category == 'blog' %}
+          {% assign items = site.posts %}
+        {% else %}
+          {% assign items = site.categories.[page.category] %}
+        {% endif %}
+
+        {% assign count = 0 %}
+        <!-- TODO: paginate -->
+        {% for post in items limit:10 %}
+          {% assign count = count | plus: 1 %}
+          <div class="post-item clearfix">
+            <div class="col-sm-4 {% if post.thumbnail %}thumbnail{% endif %}">
+              {% if post.thumbnail %}<img src="{{ post.thumbnail | prepend: site.baseurl }}">{% endif %}
+            </div>
+            <div class="col-sm-8">
+              <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              {% if post.external_link %}
+              <div>Url: <a href="{{ post.external_link }}" target="_blank">{{ post.external_link }}</a></div>
+              {% endif %}
+              <div><small>Date: <span class="label label-default">{{ post.date | date: '%B %-d, %Y' }}</span></small></div>
+              <div>{% for category in post.categories %}<a href="{{ category | prepend: '/' | prepend: site.baseurl }}"><span class="label label-info">{{ category | replace:'_',' ' }}</span></a> {% endfor %}{% for tag in post.tags %}<span class="label label-default">{{ tag | replace:'_',' ' }}</span> {% endfor %}</div>
+              <div class="excerpt">{{ post.excerpt | truncate: 100 }}</div>
+            </div>
+          </div>
+        {% endfor %}
+        {% if count == 0 %}
+          <div class="alert alert-info">Nothing to see here yet.</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

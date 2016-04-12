@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post {% for category in page.categories %}{{ category | replace:'_','-' }}{% endfor %}" itemscope itemtype="http://schema.org/BlogPosting">
 <div class="container">
   <div class="row">
-	  <header class="post-header col-md-10 col-md-offset-1 text-center">
+	  <header class="post-header text-center">
 	    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-	    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+	    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
 	    <p class="post-categories">
 	    	{% for category in page.categories %}<span class="label label-info">{{ category | replace:'_',' ' }}</span> {% endfor %}
 	    	{% for tag in page.tags %}<span class="label label-default">{{ tag | replace:'_',' ' }}</span> {% endfor %}
@@ -14,10 +14,13 @@ layout: default
       {% if page.featured-image %}
       <div class="featured-image"><img class="img-responsive center-block" src="{{ page.featured-image | prepend: site.baseurl }}"></div>
       {% endif %}
+      {% if page.external_link %}
+      <div class="text-center"><a href="{{ page.external_link }}" target="_blank">{{ page.external_link }}</a></div>
+      {% endif %}
 	  </header>
   </div>
   <div class="row">
-	  <div class="post-content col-md-10 col-md-offset-1 " itemprop="articleBody">
+	  <div class="col-xs-12 post-content" itemprop="articleBody">
 	    {{ content }}
 	  </div>
   </div>

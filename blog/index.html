@@ -1,0 +1,7 @@
+---
+layout: category
+title: Blog
+category: blog
+---
+<p class="text-center">All categories</p>
+<div class="text-center">{% for category in site.categories %}<a href="{{ category | first | prepend: '/' | prepend: site.baseurl }}"><span class="label label-info">{{ category | first | replace:'_',' ' }}</span></a> {% endfor %}

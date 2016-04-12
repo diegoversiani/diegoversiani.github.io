@@ -39,6 +39,29 @@ footer {
   }
 }
 
+// Post Listing
+.post-item {
+  .thumbnail {
+    @media (max-width: $screen-xs-max) {
+      width: 260px;
+      margin: 10px auto;
+    }
+  }
+
+  .title {
+    font-size: 1.5em;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .excerpt {
+    margin-top: 10px;
+  }
+}
+
+// Post
 .post-content {
   margin: 20px 0;
 }
