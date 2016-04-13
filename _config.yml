@@ -27,26 +27,29 @@ email: diegoversiani@gmail.com
 phone: 
 owner_profile_img_url: http://www.gravatar.com/avatar/09bde1935a1a7c56c7f6529fdc148956?size=250
 owner_name: Diego Versiani
-owner_title: Web Developer - WordPress Themes Developer
+owner_title: Web Developer - WordPress, Jekyll and Rails.
 about_me: >
   My name is Diego Versiani, and I’m a web developer with a penchant for business management and gamification.
   <br><br>
-  I currently work as a Freelancer. More specifically, I work for 
+  I currently work as a Freelancer. More specifically, now I am working for 
   <a href="http://cafe-do.com" target="_blank">café-do digital agency</a> coding websites in 
-  <a href="http://jekyllrb.com" target="_blank">Jekyll</a> and <a href="http://wordpress.org" target="_blank">WordPress</a> 
-  and take side jobs.
+  <a href="http://jekyllrb.com" target="_blank">Jekyll</a> and 
+  <a href="http://wordpress.org" target="_blank">WordPress</a>.
   <br><br>
-  I also work on my side <a href="/projects">projects</a>.
+  I also work on my own <a href="/projects">projects</a>.
   <br><br>
-  I like things on their own place and I love to build stuff, it can be websites, houses, the interior of 
-  our van (Matilda) or just a new tool for whatever I need to do.
+  I love to create stuff, it can be websites, houses, the interior of 
+  my motorhome (Matilda) or delicious meals.
   <br><br>  
-  I like traveling and taking care of Matilda's health, baking and fermenting 
-  food in jars. I love food, the kind that nourishes my body and soul! 
+  I like traveling, taking care of Matilda's health, baking and fermenting 
+  food in jars.
   <br><br>
-  Take a look at my <a href="https://linkedin.com/in/diegoversiani/en" target="_blank">LinkedIn Profile</a>
-  or follow me on this <a href="/blog">this blog</a> 
-  and <a href="http://2heartsakombi.wpdevcloud.com" target="_blank">2 Hearts &amp; a Kombi</a>.
+  If you want to know more about my professional skills, take a look at my 
+  <a href="https://linkedin.com/in/diegoversiani/en" target="_blank">LinkedIn Profile</a>.
+
+  Follow me on this <a href="/blog">this blog</a> 
+  or if you are curious about my adventures check this out 
+  <a href="http://2heartsakombi.wpdevcloud.com" target="_blank">2 Hearts &amp; a Kombi</a>.
 
 # Social Networks properties
 show_social_networks: true

@@ -9,6 +9,6 @@ thumbnail: /images/tools/placeit-thumb.jpg
 external_link: http://placeit.net
 ---
 
-An online tool I use to create the mockups for my websites as it will be seen in devices like smartphones, tablets and desktop computers.  
+An online tool I use to create the mockups for my work where I can see how it would look like in different devices like smartphones, tablets and computers.  
   
-There are thousands of options of pictures and videos and interactive demo mockups.
+There are thousands of options: pictures, videos and interactive demo mockups.
