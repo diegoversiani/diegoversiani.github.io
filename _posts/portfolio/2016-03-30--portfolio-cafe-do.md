@@ -9,6 +9,7 @@ thumbnail: /images/portfolio/cafe-do-thumb.jpg
 external_link: http://cafe-do.com
 ---
 
-New site for café-do Digital Agency.
 
-Some of the main technical requirements were to have a clean layout and a background video hero/jumbotrom.
+Café-do Digital Agency needed a brand new website to represent it new vision and target market. It required a clean visual with a background video on its main page.
+
+It was build in Jekyll using Twitter Bootstrap with HTML5 and CSS3.
