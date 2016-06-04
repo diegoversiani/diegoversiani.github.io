@@ -12,7 +12,7 @@ sass:
 
 # Site settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dvlopes.github.io" # the base hostname & protocol for your site
+url: "http://diegoversiani.me" # the base hostname & protocol for your site
 title: dvlopes
 description: >
   My name is Diego Versiani, and I’m a web developer with a penchant for business management and gamification. 
