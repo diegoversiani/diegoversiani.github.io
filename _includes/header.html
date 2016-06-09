@@ -1,21 +1,16 @@
-<header>
-  <nav class="container navbar navbar-default">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">{{ site.title }}</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
+<header class="site-header">
+  <nav class="container">
+    <div class="row">
+      <div class="site-branding six columns">
+        <h2><a href="{{ "/" | prepend: site.baseurl }}">Diego Versiani</a></h2>
+      </div>
+      <div class="site-navigation six columns" role="navigation">
+        <ul class="main-menu">
+          <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
+          <li><a href="{{ "/about" | prepend: site.baseurl }}">About</a></li>
+          <li><a href="{{ "/contact" | prepend: site.baseurl }}">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>

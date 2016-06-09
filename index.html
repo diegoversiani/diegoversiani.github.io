@@ -1,15 +1,79 @@
 ---
-layout: default
+layout: homepage
 ---
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 text-center">
-      <img src="{{ site.owner_profile_img_url }}" alt="{{ site.owner_name }}">
-      <h3>{{ site.owner_title }}</h3>
+<section class="profile">
+  <div class="container">
+    <div class="four columns">
+      <div class="picture">
+        <img src="http://www.gravatar.com/avatar/09bde1935a1a7c56c7f6529fdc148956?size=250" alt="Diego's Profile Picture">
+      </div>
     </div>
-    <div class="col-md-12">
-      <p>{{ site.about_me }}</p>
+    <div class="eight columns">
+      <div class="about">
+        <h1>Hi, I'm Diego</h1>
+        <h3>I develop WordPress Websites for meaningful user experiences.</h3>
+        <p>Let's meet eachother, <a href="{{ '/about' | prepend: site.baseurl }}">I'll go first &raquo;</a></p>
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+<section class="value-props">
+  <div class="container">
+    <h3>Things I do Well</h3>
+    <div class="row">
+      <div class="four columns value-prop">
+        <h5 class="title">UX Design</h5>
+        <p>User Experience is what matters the most. The interactions are designed to convert visitors in customers.</p>
+      </div>
+      <div class="four columns value-prop">
+        <h5 class="title">Modern Websites</h5>
+        <p>Fast, secure and easy to manage websites that work on any screen size, from smartphones to tablets and desktop computers.</p>
+      </div>
+      <div class="four columns value-prop">
+        <h5 class="title">Your Satisfaction</h5>
+        <p>Your satisfaction is my ultimate goal. That's why I focus on good communication, collaboration and fast delivery.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio">
+  <div class="container">
+    <h3>Latest Projects</h3>
+
+    <div class="project featured row">
+      <div class="picture six columns">
+        <img src="{{ '/images/projects/underskeleton.jpg' | prepend: site.baseurl }}">
+      </div>
+      <div class="six columns">
+        <h5 class="title">Underskeleton</h5>
+        <p>Underskeleton is a light superfast starter theme with minimalist, dead simple css boilerplate and grid system and just enough styling to get starter with your next awesome WordPress theme.</p>
+        <a class="button" href="http://getunderskeleton.com">Go to website</a>
+      </div>
+    </div>
+    <hr class="small">
+
+    {% for post in site.categories.portfolio limit:3 %}
+
+    <div class="project row">
+      <div class="picture six columns">
+        <img src="{{ post.image | prepend: '/images/portfolio/'' | prepend: site.baseurl }}">
+      </div>
+      <div class="six columns">
+        <h5 class="title">{{ post.title }}</h5>
+        <p>{{ post.content }}</p>
+        <div class="actions">
+          <a class="button" href="{{ post.external_link }}">See Live <i class="fa fa-external-link" target="_blank"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr class="small">
+
+    {% endfor %}
+
+  </div>
+</section>
+
+{% include section-contact-cta.html %}

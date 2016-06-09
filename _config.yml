@@ -5,58 +5,19 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Build settings
-markdown: kramdown
-sass:
-  style: :compressed
+exclude: ['bower_components','node_modules','bower.json','package.json','gulpfile.js','README.md']
 
 # Site settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://diegoversiani.me" # the base hostname & protocol for your site
-title: dvlopes
+title: Diego Versiani
+subtitle: Web Developer
 description: >
-  My name is Diego Versiani, and I’m a web developer with a penchant for business management and gamification. 
-  I’m currently working as a Freelancer. More specifically, I work for café-do digital agency (cafe-do.com) 
-  coding websites in Jekyll and WordPress and I take side jobs as well.
-copyright: Feel free to use what you find in this website, unless noted.
+  My name is Diego Versiani, I’m a web developer with a penchant for business management and gamification. 
+  I’m currently working as a Freelancer WordPress Developer.
+  I love to create stuff, it can be websites, houses, the interior of my motorhome (Matilda) or delicious meals.
+  I like traveling, taking care of Matilda's health, baking and fermenting food in jars.
 
-# Owner's Info
-show_email_on_footer: true
-show_phone_on_footer: false
-email: diegoversiani@gmail.com
-phone: 
-owner_profile_img_url: http://www.gravatar.com/avatar/09bde1935a1a7c56c7f6529fdc148956?size=250
-owner_name: Diego Versiani
-owner_title: Web Developer - WordPress, Jekyll and Rails.
-about_me: >
-  My name is Diego Versiani, and I’m a web developer with a penchant for business management and gamification.
-  <br><br>
-  I currently work as a Freelancer. More specifically, now I am working for 
-  <a href="http://cafe-do.com" target="_blank">café-do digital agency</a> coding websites in 
-  <a href="http://jekyllrb.com" target="_blank">Jekyll</a> and 
-  <a href="http://wordpress.org" target="_blank">WordPress</a>.
-  <br><br>
-  I also work on my own <a href="/projects">projects</a>.
-  <br><br>
-  I love to create stuff, it can be websites, houses, the interior of 
-  my motorhome (Matilda) or delicious meals.
-  <br><br>  
-  I like traveling, taking care of Matilda's health, baking and fermenting 
-  food in jars.
-  <br><br>
-  If you want to know more about my professional skills, take a look at my 
-  <a href="https://linkedin.com/in/diegoversiani/en" target="_blank">LinkedIn Profile</a>.
+baseurl: "" # the subpath of your site, e.g. /blog 
+url: "http://diegoversiani.me" # the base hostname & protocol for your site
 
-  Follow me on this <a href="/blog">this blog</a> 
-  or if you are curious about my adventures check this out 
-  <a href="http://2heartsakombi.wpdevcloud.com" target="_blank">2 Hearts &amp; a Kombi</a>.
-
-# Social Networks properties
-show_social_networks: true
-facebook_username: diego.versiani.pires.lopes
-github_username: dvlopes
-twitter_username: 
-wordpress_username: diegoversiani
-
-# Includes
-include_fontawesome: true
+# Build settings
+markdown: kramdown

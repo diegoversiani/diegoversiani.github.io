@@ -1,0 +1,334 @@
+// == SITE STYLES
+
+// == Mixins
+@mixin section-paddings( $place: '' ) {
+  $top: true;
+  $bottom: true;
+
+  @if $place == 'top' {
+    $bottom: false;
+  } @elseif $place == 'bottom' {
+    $top: false;
+  }
+
+  @if $top {
+    padding-top: 8rem;
+  }
+
+  @if $bottom {
+    padding-bottom: 6rem;
+  }
+
+}
+
+// == Text light color on dark backgrounds
+@mixin light-text() {
+  color: #fff;
+  a {
+    color: inherit;
+
+    &.button:hover,
+    &.button:active,
+    &.button:focus {
+      color: inherit;
+      border-color: inherit;
+      background-color: transparentize(#fff, .8)
+    }
+  }
+}
+// !== Text light color on dark backgrounds
+
+// == Center Block
+@mixin center-block() {
+  margin-left: auto;
+  margin-right: auto;
+}
+// !== Center Block
+
+// !== Mixins
+
+// == RESET
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+// !== RESET
+
+// == Section Paddings
+section.value-props,
+section.portfolio,
+section.contact-cta,
+section.about-cta,
+section.footer-info {
+  @include section-paddings();
+}
+// == Section Paddings
+
+hr {
+  border-color: $border-color;
+
+  &.small { width: 50%; }
+}
+
+.message {
+  display: inline-block;
+  width: 100%;
+  padding: .5rem;
+
+  &.error {
+    color: #f00;
+  }
+  &.success {
+    color: #4cbf50;
+  }
+}
+
+.button.cta {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  height: auto;
+}
+
+.site-header {
+  .site-branding h2 {
+    margin: 0;
+
+    a {
+      color: $primary-color;
+      font-size: 2rem;
+      text-decoration: none;
+    }
+  }
+
+  .main-menu {
+    display: block;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+
+    li:not(:first-child) {
+      margin-left: 2rem;
+    }
+
+    li {
+      display: inline-block;
+      margin: 1rem 0 0;
+
+      a {
+        color: $secondary-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.page-header,
+.post-header {
+  padding-top: 3rem;
+}
+
+.page-content,
+.post-content {
+  padding-top: 3rem;
+  @include section-paddings('bottom');
+}
+
+section.profile,
+section.about {
+  padding-top: 3rem;
+  @include section-paddings('bottom');
+
+  .picture {
+    @include center-block();
+
+    img {
+      box-shadow: 0 0 .3rem .3rem $light-grey;
+    }
+  }
+}
+
+section.profile {
+  .picture {
+    width: 15rem;
+  }
+
+  .about {
+    text-align: center;
+  }
+}
+
+section.value-props {
+  background-color: $light-grey;
+
+  .title {
+    font-weight: bold;
+  }
+}
+
+section.portfolio {
+  .project {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .picture img {
+      width: 100%;
+      min-height: 5rem;
+      box-shadow: 0 0 1rem 1rem $light-grey;
+    }
+
+    .title {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .actions {
+      text-align: center;
+    }
+  }
+
+  hr:last-child {
+    display: none;
+  }
+}
+
+section.contact-cta,
+section.about-cta,
+section.contact .project-form-cta {
+  text-align: center;
+  background-color: $primary-color;
+  @include light-text();
+
+  &.padding {
+    padding: 3rem;
+  }
+
+  p:not(.normal) {
+    font-size: 2.4rem;
+  }
+}
+
+section.contact {
+  h3 {
+    margin-top: 3rem;
+  }
+}
+
+section.footer-info {
+  text-align: center;
+  background-color: $light-grey;
+
+  h6 {
+    font-weight: bold;
+  }
+
+  .row {
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    padding: 1rem 1rem 0;
+    transition: ease .5s;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.featured:hover,
+    &.featured:active,
+    &.featured:focus {
+      background-color: #fff;
+    }
+
+    &.featured {
+      background-color: darken($light-grey, 10%);
+    }
+
+    > a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    u {
+      color: $link-color;
+    }
+
+    img {
+      max-width: 5rem;
+    }
+
+    i.fa {
+      font-size: 5rem;
+    }
+  }
+}
+
+// Larger than tablet
+@media (#{$bp-larger-than-tablet}) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: left;
+  }
+
+  .site-header .main-menu {
+    float: right;
+
+    li {
+      margin: 2rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  section.profile {
+    @include section-paddings();
+
+    .picture {
+      width: 25rem;
+      margin-left: initial;
+      margin-right: none;
+    }
+
+    .about {
+      text-align: left;
+    }
+  }
+
+  section.portfolio {
+    .project {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+
+      .title {
+        margin-top: 0;
+      }
+    }
+  }
+
+  section.contact {
+    h3 {
+      margin-top: 0;
+    }
+  }
+
+  section.footer-info {
+    h6 {
+      text-align: center;
+    }
+  }
+}

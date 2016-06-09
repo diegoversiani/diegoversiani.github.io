@@ -1,10 +1,11 @@
 ---
-// Jekyll-boostrap guide: http://veithen.github.io/2015/03/26/jekyll-bootstrap.html 
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-  'theme/variables',
-  "bootstrap",
-  'theme/bootswatch',
-  "theme/theme"
+  "styles/variables",
+  "skeleton-scss/skeleton",
+  "fontawesome/font-awesome",
+  "styles/site"
 ;

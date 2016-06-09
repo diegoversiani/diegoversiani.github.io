@@ -1,15 +1,10 @@
 ---
 layout: post
-title:  "café-do"
+title:  "café-do digital agency"
 date:   2016-03-30
 categories: portfolio
-tags: jekyll
-featured-image: /images/portfolio/cafe-do-full.jpg
-thumbnail: /images/portfolio/cafe-do-thumb.jpg
+image: cafedo.jpg
 external_link: http://cafe-do.com
 ---
 
-
-Café-do Digital Agency needed a brand new website to represent it new vision and target market. It required a clean visual with a background video on its main page.
-
-It was build in Jekyll using Twitter Bootstrap with HTML5 and CSS3.
+Café-do Digital Agency needed a brand new website to represent their new vision and better communicate with their target market. It required a clean visual with a background video on its main page.
