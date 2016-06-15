@@ -1,11 +1,11 @@
 {
-  "name": "underskeleton-website",
+  "name": "Diego Versiani Website",
   "version": "0.0.1",
-  "homepage": "http://dvlopes.github.io/underskeleton",
+  "homepage": "http://diegoversiani.me",
   "authors": [
     "Diego Versiani <diegoversiani@gmail.com>"
   ],
-  "description": "Website for the Underskeleton WordPress Starter Theme: https://github.com/dvlopes/underskeleton",
+  "description": "Website of Diego Versiani: http://diegoversiani.me",
   "moduleType": "globals",
   "main": [
     "css/main.scss"
@@ -24,12 +24,12 @@
     "tests"
   ],
   "dependencies": {
-    "skeleton-scss": "https://github.com/dvlopes/Skeleton-Sass.git",
+    "skeleton-scss": "https://github.com/diegoversiani/Skeleton-Sass.git",
     "fontawesome": "~4.6.3"
   },
-  "_source": "https://github.com/dvlopes/underskeleton.git",
+  "_source": "https://github.com/diegoversiani/diegoversiani.github.io.git",
   "_target": "~0.0.1",
-  "_originalSource": "underskeleton"
+  "_originalSource": ""
 }
 
 

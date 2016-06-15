@@ -1,8 +1,8 @@
-# dvlopes.github.io
+# diegoversiani.github.io
 
 ## Jekyll Command
 
-Run the command from inside the root directory: `dvlopes.github.io`
+Run the command from inside the root directory: `diegoversiani.github.io`
 `jekyll build --watch`
 
 
