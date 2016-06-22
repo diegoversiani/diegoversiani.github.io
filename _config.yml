@@ -9,13 +9,11 @@ exclude: ['bower_components','node_modules','bower.json','package.json','gulpfil
 
 # Site settings
 title: Diego Versiani
-subtitle: Web Developer
+subtitle: Web Developer & UX Designer
 description: >
-  My name is Diego Versiani, I’m a web developer with a penchant for business management and gamification. 
-  I’m currently working as a Freelancer WordPress Developer.
-  I love to create stuff, it can be websites, houses, the interior of my motorhome (Matilda) or delicious meals.
-  I like traveling, taking care of Matilda's health, baking and fermenting food in jars.
-
+  I develop WordPress Websites for meaningful user experiences. 
+  About me: I love to create stuff, it can be websites, houses, the interior of my motorhome 
+  or delicious meals. I like traveling, baking and fermenting food in jars.
 baseurl: "" # the subpath of your site, e.g. /blog 
 url: "http://diegoversiani.me" # the base hostname & protocol for your site
 
