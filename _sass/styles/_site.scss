@@ -89,6 +89,7 @@ h6 {
 // !== RESET
 
 // == Section Paddings
+section.value-props,
 section.portfolio,
 section.contact-cta,
 section.about-cta,
@@ -188,11 +189,19 @@ section.about {
 
 section.profile {
   .picture {
-    width: 15rem;
+    max-width: 15rem;
   }
 
   .about {
     text-align: center;
+  }
+}
+
+section.value-props {
+  background-color: $light-grey;
+
+  .title {
+    font-weight: bold;
   }
 }
 
@@ -321,7 +330,7 @@ section.footer-info {
     @include section-paddings();
 
     .picture {
-      width: 25rem;
+      max-width: 25rem;
       margin-left: initial;
       margin-right: none;
     }
@@ -358,7 +367,7 @@ section.footer-info {
 // == Skillset
 .skillset {
   background-color: $light-grey;
-  @include section-paddings();
+  @include section-paddings('bottom');
 }
 
 .skillset__list {
