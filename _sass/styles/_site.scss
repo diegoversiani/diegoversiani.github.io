@@ -392,12 +392,12 @@ section.footer-info {
 }
 
 .skillset__list-item--advanced {
-  @include progress-bar-color($secondary-color);
+  @include progress-bar-color($primary-color);
 }
 
 .skillset__list-item--intermediate,
 .skillset__list-item--begginer {
-  @include progress-bar-color($primary-color);
+  @include progress-bar-color($secondary-color);
 }
 
 .skillset__list-item--language {
