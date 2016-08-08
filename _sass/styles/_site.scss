@@ -362,7 +362,21 @@ section.footer-info {
       text-align: center;
     }
   }
+
+
+
+  section.contact .row {
+    display: flex;
+  }
+
+  #contact-form {
+    margin-bottom: 0;
+  }
 }
+
+
+
+
 
 // == Skillset
 .skillset {
