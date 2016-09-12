@@ -8,7 +8,7 @@ ref: sitemap
   {% for page in site.pages %}
     {% if page.ref == '404' or page.ref == 'css' %}{% else %}
       <url>
-        <loc>{{site.base}}{{ page.url }}</loc>
+        <loc>{{ page.url | replace:'index.html','' | replace:'.html','' | prepend: site.baseurl | prepend: site.url }}</loc>
         {% assign versions=site.pages | where:"ref", page.ref %}
         {% for version in versions %}
           <xhtml:link rel="alternate" hreflang="{{ version.lang }}" href="{{ page.url | replace:'index.html','' | replace:'.html','' | prepend: site.baseurl | prepend: site.url }}" />
