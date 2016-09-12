@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: en
+ref: portfolio-cafedo
 title:  "café-do digital agency"
 date:   2016-03-30
 categories: portfolio

@@ -1,7 +1,7 @@
 ---
 layout: default
 ref: index
-lang: en
+lang: pt
 ---
 
 <section class="profile">
@@ -13,9 +13,9 @@ lang: en
     </div>
     <div class="eight columns">
       <div class="about">
-        <h1>Hi, I'm Diego</h1>
-        <h3>I develop WordPress Websites for meaningful user experiences.</h3>
-        <p>Let's meet eachother, <a href="{{ '/about' | prepend: site.baseurl }}">I'll go first &raquo;</a></p>
+        <h1>Oi, me chamo Diego</h1>
+        <h3>Eu desenvolvo websites em WordPress para &oacute;tima experi&ecirc;ncia dos visitantes.</h3>
+        <p>Vamos nos conhecer, <a href="{{ '/sobre' | prepend: site.baseurl }}">eu come&ccedil;o &raquo;</a></p>
       </div>
     </div>
   </div>
@@ -23,15 +23,18 @@ lang: en
 
 <section class="value-props">
   <div class="container">
-    <h3>Things I do Well</h3>
+    <h3>O que faço bem</h3>
     <div class="row">
       <div class="six columns value-prop">
-        <h5 class="title">Modern Websites</h5>
-        <p>Fast, secure and easy to manage websites that work on any screen size, from smartphones to tablets and desktop computers.</p>
+        <h5 class="title">Websites Modernos</h5>
+        <p>Websites r&aacute;pidos, seguros e f&aacute;ceis de gerenciar que funcionam bem em qualquer tamanho de tela, de smartphones a tablets e computadores.</p>
       </div>
       <div class="six columns value-prop">
-        <h5 class="title">UX Design</h5>
-        <p>User Experience is what matters the most. The interactions are designed to convert visitors in customers.</p>
+        <h5 class="title">Experi&ecirc;ncia do visitante</h5>
+        <p>De que adianta ser o mais bonito, com os recursos mais novos se ele n&atilde;o ajuda a atingir seus objetivos?<br>
+        A experi&ecirc;ncia dos visitantes &eacute; o que mais importa em um website.<br>
+        Converta os visitantes de seu site em clientes fi&eacute;is!
+        </p>
       </div>
     </div>
   </div>
@@ -39,14 +42,14 @@ lang: en
 
 <section class="skillset">
   <div class="container">
-    <h3>Skills</h3>
+    <h3>Habilidades</h3>
     
     <div class="row">
       
       <div class="four columns">
         <h5>Front-end</h5>
         <ul class="skillset__list">
-          <li class="skillset__list-item skillset__list-item--advanced">Responsive Websites &amp; WordPress Themes<progress max="100" value="95"></progress></li>
+          <li class="skillset__list-item skillset__list-item--advanced">Websites e temas para WordPress<progress max="100" value="95"></progress></li>
           <li class="skillset__list-item skillset__list-item--advanced">HTML5, CSS3 &amp; JavaScript<progress max="100" value="95"></progress></li>
           <li class="skillset__list-item skillset__list-item--begginer">AngularJS<progress max="100" value="25"></progress></li>
         </ul>
@@ -55,18 +58,18 @@ lang: en
       <div class="four columns">
         <h5>Back-end</h5>
         <ul class="skillset__list">
-          <li class="skillset__list-item skillset__list-item--advanced">SQL &amp; Relational Database<progress max="100" value="95"></progress></li>
+          <li class="skillset__list-item skillset__list-item--advanced">SQL e Banco de Dados Relacionais<progress max="100" value="95"></progress></li>
           <li class="skillset__list-item skillset__list-item--begginer">Ruby on Rails<progress max="100" value="40"></progress></li>
           <li class="skillset__list-item skillset__list-item--begginer">MongoDB<progress max="100" value="25"></progress></li>
         </ul>
       </div>
 
       <div class="four columns">
-        <h5>Languages</h5>
+        <h5>L&iacute;nguas</h5>
         <ul class="skillset__list">
-          <li class="skillset__list-item skillset__list-item--language">Brazilian Portuguese (native)<progress max="100" value="100"></progress></li>
-          <li class="skillset__list-item skillset__list-item--language">English<progress max="100" value="85"></progress></li>
-          <li class="skillset__list-item skillset__list-item--language">French<progress max="100" value="35"></progress></li>
+          <li class="skillset__list-item skillset__list-item--language">Portugu&ecirc;s (nativo)<progress max="100" value="100"></progress></li>
+          <li class="skillset__list-item skillset__list-item--language">Ingl&ecirc;s<progress max="100" value="85"></progress></li>
+          <li class="skillset__list-item skillset__list-item--language">Franc&ecirc;s<progress max="100" value="35"></progress></li>
         </ul>
       </div>
       
@@ -77,7 +80,7 @@ lang: en
 
 <section class="portfolio">
   <div class="container">
-    <h3>Latest Projects</h3>
+    <h3>&Uacute;ltimos Projetos</h3>
 
     <div class="project featured row">
       <div class="picture six columns">
@@ -85,9 +88,9 @@ lang: en
       </div>
       <div class="six columns">
         <h5 class="title">Underskeleton</h5>
-        <p>Underskeleton is a light superfast starter theme with minimalist, dead simple css boilerplate and grid system and just enough styling to get starter with your next awesome WordPress theme.</p>
+        <p>Underskeleton &eacute; um tema base para WordPress desenhado para velocidade de carregamento e desenvolvimento, usa Skeleton Boilerplate para seu sistema de grade e somente estilos necess&aacute;rios para voc&ecirc; come&ccedil;ar a desenvolver seu pr&oacute;ximo super tema em WordPress.</p>
         <div class="actions">
-          <a class="button" href="http://getunderskeleton.com">Go to website</a>
+          <a class="button" href="http://getunderskeleton.com">Ir para o site</a>
         </div>
       </div>
     </div>
@@ -103,7 +106,7 @@ lang: en
         <h5 class="title">{{ post.title }}</h5>
         <p>{{ post.content }}</p>
         <div class="actions">
-          <a class="button" href="{{ post.external_link }}">See Live <i class="fa fa-external-link" target="_blank"></i></a>
+          <a class="button" href="{{ post.external_link }}">Ver ao vivo <i class="fa fa-external-link" target="_blank"></i></a>
         </div>
       </div>
     </div>

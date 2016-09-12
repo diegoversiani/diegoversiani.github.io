@@ -1,36 +1,38 @@
 ---
 layout: page
-title: Contact me
+lang: pt
+ref: contact
+title: Contato
 ---
 <section class="contact">
   <div class="container">
     <div class="row">
       <div class="project-form-cta padding six columns">
-        <p>Have a project in mind?</p>
-        <p class="normal">I have a few questions to ask, that will help me better understand your needs.</p>
-        <p class="normal">Don't worry, it won't take long and I'll take you along.</p>
-        <a class="button cta" href="http://goo.gl/forms/nXdnEvL67ihYZxjx1">Answer Now</a>
+        <p>Tem um projeto em mente?</p>
+        <p class="normal">Responda um pequeno question&aacute;rio com perguntas que me ajudar&atilde;o a entender o que voc&ecirc; precisa.</p>
+        <p class="normal">N&atilde;o se preocupe, n&atilde;o vai demorar.</p>
+        <a class="button cta" href="http://goo.gl/forms/nXdnEvL67ihYZxjx1">Responder agora</a>
       </div>
 
       <form id="contact-form" class="six columns">
-        <h3>Send a message instead</h3>
+        <h3>Ou envie uma mensagem</h3>
         <div class="row">
           <div class="six columns">
-            <label for="email">Your name</label>
-            <input class="u-full-width" type="text" placeholder="John" id="name" name="Name" required>
+            <label for="email">Seu nome</label>
+            <input class="u-full-width" type="text" placeholder="Jo&atilde;o" id="name" name="Name" required>
           </div>
           <div class="six columns">
-            <label for="email">Your e-mail</label>
-            <input class="u-full-width" type="email" placeholder="example@mailbox.com" id="email" name="Email" required>
+            <label for="email">Seu e-mail</label>
+            <input class="u-full-width" type="email" placeholder="joao@exemplo.com.br" id="email" name="Email" required>
           </div>
         </div>
-        <label for="reason">Subject</label>
-        <input class="u-full-width" type="text" placeholder="Available to hire?" id="reason">
-        <label for="message">Message</label>
-        <textarea class="u-full-width" placeholder="Hi Diego …" id="message" name="Message:"></textarea>
+        <label for="reason">Assunto</label>
+        <input class="u-full-width" type="text" placeholder="Dispon&iacute;vel para contrato?" id="reason">
+        <label for="message">Mensagem</label>
+        <textarea class="u-full-width" placeholder="Ol&aacute; Diego, …" id="message" name="Message"></textarea>
         <input type="text" name="_gotcha" style="display:none;" />
-        <input id="btn-reset" type="reset" value="Clean">
-        <input id="btn-submit" class="button-primary" type="submit" value="Submit">
+        <input id="btn-reset" type="reset" value="Limpar">
+        <input id="btn-submit" class="button-primary" type="submit" value="Enviar mensagem">
         <span id="ajax-loading"></span>
         <div id="ajax-response"></div>
       </form>
@@ -110,7 +112,7 @@ title: Contact me
           $q('#ajax-loading').innerHTML = '<i class="fa fa-circle-o-notch fa-spin"></i>';
         },
         success: function( data ) {
-          $q('#ajax-response').innerHTML = '<span class="message success">Message sent! Thanks :)</span>';
+          $q('#ajax-response').innerHTML = '<span class="message success">Mensagem enviada! Obrigado :)</span>';
           $q('#btn-submit').disabled = false;
           $q('#ajax-loading').innerHTML = '';
 
@@ -119,7 +121,7 @@ title: Contact me
           $q('#message').value = '';
         },
         error: function( data ) {
-          $q('#ajax-response').innerHTML = '<span class="message error">Ops, there was an error. Please email me at <a href="mailto:diegoversiani@gmail.com">diegoversiani@gmail.com</a></span>';
+          $q('#ajax-response').innerHTML = '<span class="message error">Ops, ocorreu um erro. Por favor, envie um e-mail para <a href="mailto:diegoversiani@gmail.com">diegoversiani@gmail.com</a></span>';
           $q('#btn-submit').disabled = false;
           $q('#ajax-loading').innerHTML = '';
         }

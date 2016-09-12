@@ -6,9 +6,9 @@
       </div>
       <div class="site-navigation eight columns" role="navigation">
         <ul class="main-menu">
-          <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
-          <li><a href="{{ "/about" | prepend: site.baseurl }}">About</a></li>
-          <li><a class="button button-primary contact" href="{{ "/contact" | prepend: site.baseurl }}">Contact</a></li>
+          <li><a href="{{ site.t[page.lang].home_url | prepend: site.baseurl }}">{{ site.t[page.lang].home_title }}</a></li>
+          <li><a href="{{ site.t[page.lang].about_url | prepend: site.baseurl }}">{{ site.t[page.lang].about_title }}</a></li>
+          <li><a class="button button-primary contact" href="{{ site.t[page.lang].contact_url | prepend: site.baseurl }}">{{ site.t[page.lang].contact_title }}</a></li>
         </ul>
       </div>
     </div>

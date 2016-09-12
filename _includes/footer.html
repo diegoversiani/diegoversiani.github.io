@@ -6,24 +6,24 @@
         <div class="card four columns">
           <a href="https://linkedin.com/in/diegoversiani/en" target="_blank">
             <i class="fa fa-linkedin-square"></i>
-            <h6>More about my past jobs?</h6>
-            <p>See my professional profile on <u>LinkedIn</u>.</p>
+            <h6>{{ site.t[page.lang].footer_linkedin_title }}</h6>
+            <p>{{ site.t[page.lang].footer_linkedin_text }}</p>
           </a>
         </div>
 
         <div class="card four columns">
           <a href="https://github.com/diegoversiani" target="_blank">
             <i class="fa fa-github"></i>
-            <h6>Interested in code?</h6>
-            <p>See my contributions on <u>GitHub</u>.</p>
+            <h6>{{ site.t[page.lang].footer_github_title }}</h6>
+            <p>{{ site.t[page.lang].footer_github_text }}</p>
           </a>
         </div>
 
         <div class="card four columns">
           <a href="https://facebook.com/diego.versiani.pires.lopes" target="_blank">
             <i class="fa fa-facebook-square"></i>
-            <h6>Connect with me!</h6>
-            <p>Let's be friends on <u>Facebook</u>.</p>
+            <h6>{{ site.t[page.lang].footer_facebook_title }}</h6>
+            <p>{{ site.t[page.lang].footer_facebook_text }}</p>
           </a>
         </div>
       </div>
@@ -31,19 +31,33 @@
         <div class="card four columns">
           <a href="http://2heartsakombi.wpdevcloud.com" target="_blank">
             <img src="{{ '/images/2heartsakombi.png' | prepend: site.baseurl }}">
-            <h6>Curious about my adventures?</h6>
-            <p>Check this out <u>2 Hearts &amp; a Kombi.</u></p>
+            <h6>{{ site.t[page.lang].footer_2hearts_title }}</h6>
+            <p>{{ site.t[page.lang].footer_2hearts_text }}</p>
           </a>
         </div>
 
         <div class="card featured four columns">
-          <a href="{{ '/contact' | prepend: site.baseurl }}">
+          <a href="{{ site.t[page.lang].contact_url | prepend: site.baseurl }}">
             <i class="fa fa-envelope"></i>
-            <h6>Let's work together!</h6>
-            <p>Contact me <u>here.</u></p>
+            <h6>{{ site.t[page.lang].footer_contact_title }}</h6>
+            <p>{{ site.t[page.lang].footer_contact_text }}</p>
           </a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="language-selector">
+    <div class="row">
+      <span>{{ site.t[page.lang].footer_language_selector_text }}</span>
+      <ul>
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% for page in pages %}
+          <li>
+            <a href="{{ page.url | replace: '.html' '' }}" class="{{ page.lang }}">{{ page.lang }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </section>
 

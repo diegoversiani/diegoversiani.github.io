@@ -418,3 +418,24 @@ section.footer-info {
   @include progress-bar-color(#aaa);
 }
 // !== Skillset
+
+// == Language-selector
+section.language-selector {
+  padding: 1rem;
+  text-align: center;
+  background-color: $light-grey;
+
+  ul {
+    display: inline-block;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.en:lang(en), .pt:lang(pt){
+  font-weight: bold;
+}
+// !== Language-selector
