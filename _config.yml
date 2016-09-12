@@ -7,6 +7,9 @@
 
 exclude: ['bower_components','node_modules','bower.json','package.json','gulpfile.js','README.md']
 
+gems:
+  - jekyll-sitemap
+
 # Site settings
 title: Diego Versiani
 subtitle: Web Developer & UX Designer
