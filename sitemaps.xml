@@ -11,7 +11,7 @@ ref: sitemap
         <loc>{{site.base}}{{ page.url }}</loc>
         {% assign versions=site.pages | where:"ref", page.ref %}
         {% for version in versions %}
-          <xhtml:link rel="alternate" hreflang="{{ version.lang }}" href="{{site.base}}{{ version.url }}" />
+          <xhtml:link rel="alternate" hreflang="{{ version.lang }}" href="{{ page.url | replace:'index.html','' | replace:'.html','' | prepend: site.baseurl | prepend: site.url }}" />
         {% endfor %}
         <changefreq>weekly</changefreq>
       </url>
