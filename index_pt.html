@@ -14,7 +14,7 @@ lang: pt
     <div class="eight columns">
       <div class="about">
         <h1>Oi, me chamo Diego</h1>
-        <h3>Eu desenvolvo websites em WordPress para &oacute;tima experi&ecirc;ncia dos visitantes.</h3>
+        <h3>Eu desenvolvo websites em WordPress para &oacute;tima experi&ecirc;ncia dos usu&aacute;rios.</h3>
         <p>Vamos nos conhecer, <a href="{{ '/sobre' | prepend: site.baseurl }}">eu come&ccedil;o &raquo;</a></p>
       </div>
     </div>
@@ -30,7 +30,7 @@ lang: pt
         <p>Websites r&aacute;pidos, seguros e f&aacute;ceis de gerenciar que funcionam bem em qualquer tamanho de tela, de smartphones a tablets e computadores.</p>
       </div>
       <div class="six columns value-prop">
-        <h5 class="title">Experi&ecirc;ncia do visitante</h5>
+        <h5 class="title">Experi&ecirc;ncia do usu&aacute;rios</h5>
         <p>De que adianta ser o mais bonito, com os recursos mais novos se ele n&atilde;o ajuda a atingir seus objetivos?<br>
         A experi&ecirc;ncia dos visitantes &eacute; o que mais importa em um website.<br>
         Converta os visitantes de seu site em clientes fi&eacute;is!
@@ -59,7 +59,7 @@ lang: pt
         <h5>Back-end</h5>
         <ul class="skillset__list">
           <li class="skillset__list-item skillset__list-item--advanced">SQL e Banco de Dados Relacionais<progress max="100" value="95"></progress></li>
-          <li class="skillset__list-item skillset__list-item--begginer">Ruby on Rails<progress max="100" value="40"></progress></li>
+          <li class="skillset__list-item skillset__list-item--advanced">Ruby on Rails<progress max="100" value="50"></progress></li>
           <li class="skillset__list-item skillset__list-item--begginer">MongoDB<progress max="100" value="25"></progress></li>
         </ul>
       </div>
@@ -84,7 +84,9 @@ lang: pt
 
     <div class="project featured row">
       <div class="picture six columns">
-        <img src="{{ '/images/projects/underskeleton.jpg' | prepend: site.baseurl }}">
+        <a href="http://getunderskeleton.com">
+          <img src="{{ '/images/projects/underskeleton.jpg' | prepend: site.baseurl }}">
+        </a>
       </div>
       <div class="six columns">
         <h5 class="title">Underskeleton</h5>
@@ -100,7 +102,9 @@ lang: pt
 
     <div class="project row">
       <div class="picture six columns">
+        {% if post.external_link %}<a href="{{ post.external_link }}">{% endif %}
         <img src="{{ post.image | prepend: '/images/portfolio/'' | prepend: site.baseurl }}">
+        {% if post.external_link %}</a>{% endif %}
       </div>
       <div class="six columns">
         <h5 class="title">{{ post.title }}</h5>
