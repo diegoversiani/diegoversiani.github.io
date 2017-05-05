@@ -1,9 +1,67 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en-us">
 
-<section id="work-done" class="section">
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Diego Versiani &middot; Passionate Web Developer
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Dosis">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <img class="profile-picture" src="https://www.gravatar.com/avatar/09bde1935a1a7c56c7f6529fdc148956?size=100" alt="Diego's Profile Picture">
+      <h1>
+        <a href="/">
+          Diego Versiani
+        </a>
+      </h1>
+      <p class="lead">I develop <u>Responsive WordPress</u> websites for meaningful user experiences.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+      <a class="sidebar-nav-item" href="/#work-done">Work Done</a>
+      <a class="sidebar-nav-item" href="/#side-projects">Side Projects</a>
+      <a class="sidebar-nav-item" href="/about">About</a>
+      <a class="sidebar-nav-item" href="/blog">Blog</a>
+      <a class="sidebar-nav-item" href="/contact">Contact</a>
+    </nav>
+
+    <p>&copy; 2017. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <section id="work-done" class="section">
 <h2 class="section-title">Work Done</h2>
 
 <div id="work" class="posts">
@@ -12,7 +70,7 @@ title: Home
       <a href="https://hartbeach.nl" target="_blank">Hart Beach - Redesign</a>
     </h1>
     <a href="https://hartbeach.nl" target="_blank">
-      <img class="post-featured-image" src="{{ site.baseurl }}public/images/work-hartbeach.jpg" alt="Hart Beach - Redesign Project">
+      <img class="post-featured-image" src="/public/images/work-hartbeach.jpg" alt="Hart Beach - Redesign Project">
     </a>
     <p>
       Hart Beach is a <em>QuikSilver</em> surf school and surf shop located in Scheveningen/Netherlands. Its website has <u>thousands of products</u> available to sell online.
@@ -32,7 +90,7 @@ title: Home
       <a href="http://josephsantos.com.br" target="_blank">Joseph Santos - Website Project</a>
     </h1>
     <a href="http://josephsantos.com.br" target="_blank">
-      <img class="post-featured-image" src="{{ site.baseurl }}public/images/work-josephsantos.jpg" alt="Joseph Santos Website">
+      <img class="post-featured-image" src="/public/images/work-josephsantos.jpg" alt="Joseph Santos Website">
     </a>
     <p>
       Joseph Santos is a professional photographer from Belo Horizonte/Brazil. He needed a portfolio website and blog to talk about what it means to be a photographer.
@@ -52,7 +110,7 @@ title: Home
       <a href="http://jveventos.com.br" target="_blank">JVEventos - Website Project</a>
     </h1>
     <a href="http://jveventos.com.br" target="_blank">
-      <img class="post-featured-image" src="{{ site.baseurl }}public/images/work-jveventos.jpg" alt="JVEventos Website">
+      <img class="post-featured-image" src="/public/images/work-jveventos.jpg" alt="JVEventos Website">
     </a>
     <p>
       JV Eventos is a sofisticated event planning company and our job was to make their website resonate with their clients needs and wishes.
@@ -70,7 +128,7 @@ title: Home
   <h3 class="call">
     Do you think we can work together?
   </h3>
-  <a href="{{ site.url }}/contact/" class="button action">Contact me</a>
+  <a href="http://diegoversiani.me/contact/" class="button action">Contact me</a>
 </div>
 </section>
 
@@ -97,7 +155,7 @@ title: Home
   <h3 class="call">
     Interested in my Open Source contributions?
   </h3>
-  <a href="{{ site.github.repo }}" class="button action" target="_blank">Check My GitHub</a>
+  <a href="https://github.com/diegoversiani" class="button action" target="_blank">Check My GitHub</a>
 </div>
 
 </section>
@@ -108,23 +166,31 @@ title: Home
 <h2 class="section-title">Latest Posts</h2>
 
 <div class="posts">
-  {% for post in site.posts | limit: 5 %}
+  
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
+      <a href="/2017/05/05/hello-world/">
+        Hello World
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">05 May 2017</span>
 
-    {{ post.content | markdownify | strip_html | truncatewords: 30 }}
+    Howdy! This is just and example page.
+
+I’ll be posting real content soon, stay tuned!
+
   </div>
-  {% endfor %}
+  
 </div>
 
 <div class="button-container">
-  <a class="button" href="{{ site.baseurl }}blog">More posts</a>
+  <a class="button" href="/blog">More posts</a>
 </div>
 
 </section>
+
+    </div>
+
+  </body>
+</html>
