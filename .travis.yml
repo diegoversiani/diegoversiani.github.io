@@ -3,10 +3,6 @@ rvm:
 - 2.3.3
 
 script: bash ./deploy.sh
-env:
-  global:
-  - ENCRYPTION_LABEL: "c47d449edf81"
-  - COMMIT_AUTHOR_EMAIL: "diegoversiani@gmail.com"
 
 # branch whitelist, only for GitHub Pages
 branches:

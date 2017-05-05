@@ -1,3 +1,5 @@
+# For more info see: https://gist.github.com/domenic/ec8b0fc8ab45f39403dd
+
 #!/bin/bash
 set -e # Exit with nonzero exit code if anything fails
 
