@@ -169,7 +169,7 @@ button:active, button:hover, button:focus,
   box-shadow: .3rem .3rem 1rem rgba(45,45,45,.5);
 }
 
-.form-buttons {
+.button-container {
   padding: 2rem 0;
   text-align: center;
 }
