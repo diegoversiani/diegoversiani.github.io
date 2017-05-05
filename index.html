@@ -1,124 +1,116 @@
 ---
 layout: default
-ref: index
-lang: en
+title: Home
 ---
 
-<section class="profile">
-  <div class="container">
-    <div class="four columns">
-      <div class="picture">
-        <img src="http://www.gravatar.com/avatar/09bde1935a1a7c56c7f6529fdc148956?size=250" alt="Diego's Profile Picture">
-      </div>
-    </div>
-    <div class="eight columns">
-      <div class="about">
-        <h1>Hi, I'm Diego</h1>
-        <h3>I develop WordPress Websites for meaningful user experiences.</h3>
-        <p>Let's meet eachother, <a href="{{ '/about' | prepend: site.baseurl }}">I'll go first &raquo;</a></p>
-      </div>
-    </div>
+<section id="work-done" class="section">
+<h2 class="section-title">Work Done</h2>
+
+<div id="work" class="posts">
+  <div class="post">
+    <h1 class="post-title">
+      <a href="https://hartbeach.nl" target="_blank">Hart Beach - Redesign</a>
+    </h1>
+    <img class="post-featured-image" src="{{ site.baseurl }}public/images/work-hartbeach.jpg" alt="Hart Beach - Redesign Project">
+    <p>
+      Hart Beach is a <em>QuikSilver</em> surf school and surf shop located at Scheveningen/Netherlands. Its website has <u>thousands of products</u> available to sell online.
+    </p>
+    <p>
+      I contributed <u>coding</u> the new amazing desing and giving <em>valuable feedback</em> for its <u>mobile version</u>, I also did website <u>speed optimization</u> and server configuration tuning. This project was done with the great team of <a href="https://pagespeed.guru" target="_blank"><em>PageSpeed.Guru</em></a>
+    </p>
+    <a href="https://hartbeach.nl" class="button" target="_blank">Check it out</a>
   </div>
+</div>
+
+<div id="work" class="posts">
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://josephsantos.com.br" target="_blank">Joseph Santos - Website Project</a>
+    </h1>
+    <img class="post-featured-image" src="{{ site.baseurl }}public/images/work-josephsantos.jpg" alt="Joseph Santos Website">
+    <p>
+      Joseph Santos is a professional photographer from Belo Horizonte/Brazil. He needed a portfolio website and blog to talk about what it means to be a photographer.
+    </p>
+    <p>
+      We <u>designed his logo</u>, <u>business card</u> and <u>website</u> to be <em>clean, beaultiful</em> and prioritise his photo shoots while representing his personality. My biggest contributions was <u>main design</u> decisions, <u>coding</u> and server configuration.
+    </p>
+    <a href="http://josephsantos.com.br" class="button" target="_blank">Check it out</a>
+  </div>
+</div>
+
+<div id="work" class="posts">
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://jveventos.com.br" target="_blank">JVEventos - Website Project</a>
+    </h1>
+    <img class="post-featured-image" src="{{ site.baseurl }}public/images/work-jveventos.jpg" alt="JVEventos Website">
+    <p>
+      JV Eventos is a sofisticated event planning company and our job was to make their website resonate with their clients needs and wishes.
+    </p>
+    <p>
+      I contributed with <u>user experience</u> and design decisions for <u>mobile version</u> and made all server configuration and <u>coding</u>, this project was done in conjunction with <em>Cafe-do Agency</em>.
+    </p>
+    <a href="http://jveventos.com.br" class="button" target="_blank">Check it out</a>
+  </div>
+</div>
+
+<div class="cta">
+  <h3 class="call">
+    Do you think we can work together?
+  </h3>
+  <a href="{{ site.url }}/contact/" class="button action">Contact me</a>
+</div>
 </section>
 
-<section class="value-props">
-  <div class="container">
-    <h3>Things I do Well</h3>
-    <div class="row">
-      <div class="six columns value-prop">
-        <h5 class="title">Modern Websites</h5>
-        <p>Fast, secure and easy to manage websites that work on any screen size, from smartphones to tablets and desktop computers.</p>
-      </div>
-      <div class="six columns value-prop">
-        <h5 class="title">UX Design</h5>
-        <p>User Experience is what matters the most. The interactions are designed to convert visitors in customers.</p>
-      </div>
-    </div>
+
+
+<section id="side-projects" class="section">
+<h2 class="section-title">Side Projects</h2>
+
+<div class="posts">
+  <div class="post">
+    <h1 class="post-title">
+      <a href="https://getunderskeleton.com" target="_blank">Underskeleton</a>
+    </h1>
+    <p>
+      A super fast <u>WordPress Starter Theme</u> with minimalist, dead simple css boilerplate and grid system and just enough styling to get starter with your next awesome WordPress theme.
+    </p>
+    <a href="https://getunderskeleton.com" class="button" target="_blank">Learn more</a>
   </div>
+</div>
+
+<div class="cta">
+  <h3 class="call">
+    Interested in my Open Source contributions?
+  </h3>
+  <a href="{{ site.github.repo }}" class="button action" target="_blank">Check My GitHub</a>
+</div>
+
 </section>
 
-<section class="skillset">
-  <div class="container">
-    <h3>Skills</h3>
-    
-    <div class="row">
-      
-      <div class="four columns">
-        <h5>Front-end</h5>
-        <ul class="skillset__list">
-          <li class="skillset__list-item skillset__list-item--advanced">Responsive Websites &amp; WordPress Themes<progress max="100" value="95"></progress></li>
-          <li class="skillset__list-item skillset__list-item--advanced">HTML5, CSS3 &amp; JavaScript<progress max="100" value="95"></progress></li>
-          <li class="skillset__list-item skillset__list-item--begginer">AngularJS<progress max="100" value="25"></progress></li>
-        </ul>
-      </div>
 
-      <div class="four columns">
-        <h5>Back-end</h5>
-        <ul class="skillset__list">
-          <li class="skillset__list-item skillset__list-item--advanced">SQL &amp; Relational Database<progress max="100" value="95"></progress></li>
-          <li class="skillset__list-item skillset__list-item--advanced">Ruby on Rails<progress max="100" value="50"></progress></li>
-          <li class="skillset__list-item skillset__list-item--begginer">MongoDB<progress max="100" value="25"></progress></li>
-        </ul>
-      </div>
 
-      <div class="four columns">
-        <h5>Languages</h5>
-        <ul class="skillset__list">
-          <li class="skillset__list-item skillset__list-item--language">Brazilian Portuguese (native)<progress max="100" value="100"></progress></li>
-          <li class="skillset__list-item skillset__list-item--language">English<progress max="100" value="85"></progress></li>
-          <li class="skillset__list-item skillset__list-item--language">French<progress max="100" value="35"></progress></li>
-        </ul>
-      </div>
-      
-    </div>
+<section id="posts" class="section">
+<h2 class="section-title">Latest Posts</h2>
 
+<div class="posts">
+  {% for post in site.posts | limit: 5 %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content | markdownify | strip_html | truncatewords: 30 }}
   </div>
+  {% endfor %}
+</div>
+
+<div class="form-buttons">
+  <a class="button" href="{{ site.baseurl }}blog">More posts</a>
+</div>
+
 </section>
-
-<section class="portfolio">
-  <div class="container">
-    <h3>Latest Projects</h3>
-
-    <div class="project featured row">
-      <div class="picture six columns">
-        <a href="http://getunderskeleton.com">
-          <img src="{{ '/images/projects/underskeleton.jpg' | prepend: site.baseurl }}">
-        </a>
-      </div>
-      <div class="six columns">
-        <h5 class="title">Underskeleton</h5>
-        <p>Underskeleton is a light superfast starter theme with minimalist, dead simple css boilerplate and grid system and just enough styling to get starter with your next awesome WordPress theme.</p>
-        <div class="actions">
-          <a class="button" href="http://getunderskeleton.com">Go to website</a>
-        </div>
-      </div>
-    </div>
-    <hr class="small">
-    {% assign posts = site.categories.portfolio | where:"lang", page.lang %}
-    {% for post in posts limit:5 %}
-
-    <div class="project row">
-      <div class="picture six columns">
-        {% if post.external_link %}<a href="{{ post.external_link }}">{% endif %}
-        <img src="{{ post.image | prepend: '/images/portfolio/'' | prepend: site.baseurl }}">
-        {% if post.external_link %}</a>{% endif %}
-      </div>
-
-      <div class="six columns">
-        <h5 class="title">{{ post.title }}</h5>
-        <p>{{ post.content }}</p>
-        <div class="actions">
-          {% if post.external_link %}
-          <a class="button" href="{{ post.external_link }}">See Live <i class="fa fa-external-link" target="_blank"></i></a>
-          {% endif %}
-        </div>
-      </div>
-    </div>
-    <hr class="small">
-
-    {% endfor %}
-
-  </div>
-</section>
-
-{% include section-contact-cta.html %}

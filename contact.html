@@ -1,58 +1,57 @@
 ---
 layout: page
-lang: en
-ref: contact
-title: Contact me
+title: Contact
 ---
-<section class="contact">
-  <div class="container">
-    <div class="row">
-      <div class="project-form-cta padding six columns">
-        <p>Have a project in mind?</p>
-        <p class="normal">I have a few questions to ask, that will help me better understand your needs.</p>
-        <p class="normal">Don't worry, it won't take long and I'll take you along.</p>
-        <a class="button cta" href="http://goo.gl/forms/nXdnEvL67ihYZxjx1">Answer Now</a>
-      </div>
 
-      <form id="contact-form" class="six columns">
-        <h3>Send a message instead</h3>
-        <div class="row">
-          <div class="six columns">
-            <label for="email">Your name</label>
-            <input class="u-full-width" type="text" placeholder="John" id="name" name="Name" required>
-          </div>
-          <div class="six columns">
-            <label for="email">Your e-mail</label>
-            <input class="u-full-width" type="email" placeholder="john@example.com" id="email" name="Email" required>
-          </div>
-        </div>
-        <label for="reason">Subject</label>
-        <input class="u-full-width" type="text" placeholder="Available to hire?" id="reason">
-        <label for="message">Message</label>
-        <textarea class="u-full-width" placeholder="Hi Diego …" id="message" name="Message:"></textarea>
-        <input type="text" name="_gotcha" style="display:none;" />
-        <input id="btn-reset" type="reset" value="Clean">
-        <input id="btn-submit" class="button-primary" type="submit" value="Send message"
-        <span id="ajax-loading"></span>
-        <div id="ajax-response"></div>
-      </form>
+<section>
+<div class="cta">
+  <h3 class="call">
+    Have a project in mind?
+  </h3>
+  <p>
+    Answer a few questions to help me understand your needs.<br>It takes just 5 minutes and will save us a lot of time.</p>
+  <a href="http://goo.gl/forms/nXdnEvL67ihYZxjx1" class="button action" target="_blank">Tell me about it</a>
+</div>
+
+<h2 class="section-title">Send a message instead</h2>
+
+<div class="posts">
+  <form id="contact-form" class="six columns">
+    <div class="row">
+      <div class="six columns">
+        <label for="email">Your name</label>
+        <input class="u-full-width" type="text" placeholder="John" id="name" name="Name" required>
+      </div>
+      <div class="six columns">
+        <label for="email">Your e-mail</label>
+        <input class="u-full-width" type="email" placeholder="john@example.com" id="email" name="Email" required>
+      </div>
     </div>
-  </div>
+    <label for="reason">Subject</label>
+    <input class="u-full-width" type="text" placeholder="Available to hire?" id="reason">
+    <label for="message">Message</label>
+    <textarea class="u-full-width" placeholder="Hi Diego …" id="message" name="Message:"></textarea>
+    <input type="text" name="_gotcha" style="display:none;" />
+    <span id="ajax-loading"></span>
+    <div id="ajax-response"></div>
+    <div class="form-buttons">
+      <input id="btn-reset" type="reset" value="Clean">
+      <input id="btn-submit" class="button-primary" type="submit" value="Send message">
+    </div>
+  </form>
+</div>
+
 </section>
 
+
+
 <script type="text/javascript">
-
-
   (function() {
-    window.$q = function ( q ) { 
-      return document.querySelector(q);
-    };
-
+    
     // == Call Ajax
     function callAjax(args){
       var xmlhttp = new XMLHttpRequest();
       var data;
-
       xmlhttp.onreadystatechange = function(){
         if ( xmlhttp.readyState == 4 ) {
           if ( xmlhttp.status == 200 ){
@@ -67,35 +66,30 @@ title: Contact me
           }
         }
       }
-
       if ( args.beforeSend ) {
         args.beforeSend();
       }
-
       xmlhttp.open(args.method, args.url, true);
-
       if ( args.headers ) {
         args.headers.forEach( function (v,k,m) {
           xmlhttp.setRequestHeader(k, v);
         });
       }
-
       if ( args.postData ) {
         data = JSON.stringify( args.postData );
       }
-
       xmlhttp.send(data);
     }
-    // !== Call Ajax
 
     // == Form Submit
     function contactFormSubmit(e) {
       e.preventDefault();
 
       var postData = {
-        email: $q('#email').value,
-        reason: $q('#reason').value,
-        message: $q('#message').value
+        name: document.querySelector('#name').value,
+        email: document.querySelector('#email').value,
+        reason: document.querySelector('#reason').value,
+        message: document.querySelector('#message').value
       };
 
       var ajaxArgs = {
@@ -107,36 +101,33 @@ title: Contact me
             ['Content-Type', 'application/json']
           ]),
         beforeSend: function() {
-          $q('#ajax-response').innerHTML = '';
-          $q('#btn-submit').disabled = true;
-          $q('#ajax-loading').innerHTML = '<i class="fa fa-circle-o-notch fa-spin"></i>';
+          document.querySelector('#ajax-response').innerHTML = '';
+          document.querySelector('#btn-submit').disabled = true;
+          document.querySelector('#ajax-loading').innerHTML = '<span class="message loading"><span></span><span></span><span></span></span>';
         },
         success: function( data ) {
-          $q('#ajax-response').innerHTML = '<span class="message success">Message sent! Thanks :)</span>';
-          $q('#btn-submit').disabled = false;
-          $q('#ajax-loading').innerHTML = '';
-
-          $q('#email').value = '';
-          $q('#reason').value = '';
-          $q('#message').value = '';
+          document.querySelector('#ajax-response').innerHTML = '<span class="message success">Message sent! I will get back to you ASAP, hold on!</span>';
+          document.querySelector('#btn-submit').disabled = false;
+          document.querySelector('#ajax-loading').innerHTML = '';
+          document.querySelector('#email').value = '';
+          document.querySelector('#reason').value = '';
+          document.querySelector('#message').value = '';
         },
         error: function( data ) {
-          $q('#ajax-response').innerHTML = '<span class="message error">Ops, there was an error. Please email me at <a href="mailto:diegoversiani@gmail.com">diegoversiani@gmail.com</a></span>';
-          $q('#btn-submit').disabled = false;
-          $q('#ajax-loading').innerHTML = '';
+          document.querySelector('#ajax-response').innerHTML = '<span class="message error">Ops, there was an error. Please email me at <a href="mailto:diegoversiani@gmail.com">diegoversiani@gmail.com</a></span>';
+          document.querySelector('#btn-submit').disabled = false;
+          document.querySelector('#ajax-loading').innerHTML = '';
         }
       };
 
       callAjax(ajaxArgs);
     }
-    // !== Form Submit
-
+    
     // == Event Listeners
-    var $contactForm = $q('#contact-form');
+    var $contactForm = document.querySelector('#contact-form');
     if ( $contactForm.addEventListener ) {
       $contactForm.addEventListener( 'submit', contactFormSubmit );
     }
-    // !== Event Listeners
 
   })();
 </script>

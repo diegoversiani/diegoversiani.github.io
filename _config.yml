@@ -1,76 +1,37 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Gems
+gems:
+  - octopress-paginate
+  - redcarpet
+  - jekyll-gist
+  - pygments.rb
 
-exclude: ['bower_components','node_modules','bower.json','package.json','gulpfile.js','README.md']
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-# Site settings
-title: Diego Versiani
-subtitle: Web Developer & UX Designer
-description: >
-  I develop WordPress Websites for meaningful user experiences. 
-  About me: I love to create stuff, it can be websites, houses, the interior of my motorhome 
-  or delicious meals. I like traveling, baking and fermenting food in jars.
-baseurl: "" # the subpath of your site, e.g. /blog 
-url: "http://diegoversiani.me" # the base hostname & protocol for your site
+# Permalinks
+permalink:        pretty
 
-# Build settings
-markdown: kramdown
+# Setup
+title:            Diego Versiani
+tagline:          'Passionate Web Developer'
+description:      'I develop Responsive WordPress websites for meaningful user experiences.'
+url:              http://diegoversiani.me
+baseurl:          /
 
-# Text
-t:
-  en:
-    # menu
-    home_title: "Home"
-    about_title: "About"
-    contact_title: "Contact"
-    home_url: "/"
-    about_url: "/about"
-    contact_url: "/contact"
-    # contact cta
-    contact_cta_title: "Do you think we can work together?"
-    contact_cta_button: "Contact me"
-    # contact about
-    about_cta_title: "Not it's your turn! What about you?"
-    about_cta_button: "Send a message"
-    # footer
-    footer_linkedin_title: "More about my professional profile?"
-    footer_linkedin_text: "See on <u>LinkedIn</u>"
-    footer_github_title: "Interested in code?"
-    footer_github_text: "See my contributions on <u>GitHub</u>"
-    footer_facebook_title: "Let's be friends!"
-    footer_facebook_text: "Find me on <u>Facebook</u>"
-    footer_2hearts_title: "Curious about my adventures?"
-    footer_2hearts_text: "Check this out <u>2 Hearts & a Kombi</u>"
-    footer_contact_title: "Send me a message"
-    footer_contact_text: "Contact me <u>here</u>"
-    # language selector
-    footer_language_selector_text: "Change language: "
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
 
-  pt:
-    # menu
-    home_title: "In&iacute;cio"
-    about_title: "Sobre"
-    contact_title: "Contato"
-    home_url: "/index_pt"
-    about_url: "/sobre"
-    contact_url: "/contato"
-    # contact cta
-    contact_cta_title: "Acredita que podemos trabalhar juntos?"
-    contact_cta_button: "Vamos conversar"
-    # footer
-    footer_linkedin_title: "Mais sobre meu perfil profissional?"
-    footer_linkedin_text: "Veja no <u>LinkedIn</u>"
-    footer_github_title: "Interessado em código?"
-    footer_github_text: "Veja minhas contribuições no <u>GitHub</u>"
-    footer_facebook_title: "Vamos ser amigos!"
-    footer_facebook_text: "Encontre me no <u>Facebook</u>"
-    footer_2hearts_title: "Curioso sobre minhas aventuras?"
-    footer_2hearts_text: "Saiba mais em <u>2 Hearts & a Kombi</u>"
-    footer_contact_title: "Entre em contato"
-    footer_contact_text: "Envie uma mensagem <u>aqui</u>"
-    # language selector
-    footer_language_selector_text: "Mudar língua: "
+pagination:
+  limit:          false
+  per_page:       10
+  title_suffix:   " (page :num)"
+
+# Custom vars
+version:          2.1.0
+
+gravatar_url:     https://www.gravatar.com/avatar/09bde1935a1a7c56c7f6529fdc148956?size=100
+
+github:
+  repo:           https://github.com/diegoversiani
