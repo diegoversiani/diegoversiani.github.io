@@ -1,12 +1,11 @@
 # Gems
 gems:
   - octopress-paginate
-  - redcarpet
   - jekyll-gist
   - pygments.rb
 
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      pygments
 
 # Permalinks
