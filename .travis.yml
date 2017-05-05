@@ -7,3 +7,14 @@ env:
   global:
   - ENCRYPTION_LABEL: "c47d449edf81"
   - COMMIT_AUTHOR_EMAIL: "diegoversiani@gmail.com"
+
+# branch whitelist, only for GitHub Pages
+branches:
+  only:
+  - travis-build     # build website on this branch
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+
+sudo: false # route your build to the container-based infrastructure for a faster build
