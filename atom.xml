@@ -4,11 +4,11 @@
  <title>Diego Versiani</title>
  <link href="http://diegoversiani.me/atom.xml" rel="self"/>
  <link href="http://diegoversiani.me/"/>
- <updated>2017-05-05T12:30:13+00:00</updated>
+ <updated>2017-05-13T14:31:55+00:00</updated>
  <id>http://diegoversiani.me</id>
  <author>
-   <name>Mark Otto</name>
-   <email></email>
+   <name>Diego Versiani</name>
+   <email>diegoversiani@gmail.com</email>
  </author>
 
  
@@ -17,7 +17,7 @@
    <link href="http://diegoversiani.me/2017/05/05/hello-world/"/>
    <updated>2017-05-05T00:00:00+00:00</updated>
    <id>http://diegoversiani.me/2017/05/05/hello-world</id>
-   <content type="html">&lt;p&gt;Howdy! This is just and example page.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Howdy! This is just an example post.&lt;/p&gt;
 
 &lt;p&gt;I’ll be posting real content soon, stay tuned!&lt;/p&gt;
 </content>
