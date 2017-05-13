@@ -6,7 +6,7 @@ title: About
 ### Hi, I'm Diego Versiani
 
 
-A Passionate **WordPress Developer** with over 10 years experience developing the web experiences.
+A Passionate **WordPress Developer** with over 10 years experience.
 
 I love to create stuff, it can be websites, houses, the interior of my motorhome (Matilda) or delicious meals. I like traveling, hiking and hitchhiking, to take care of Matilda's health, baking and fermenting food in jars.
 

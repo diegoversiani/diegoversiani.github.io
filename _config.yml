@@ -18,8 +18,8 @@ url:              http://diegoversiani.me
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Diego Versiani'
+  email:            diegoversiani@gmail.com
 
 pagination:
   limit:          false
