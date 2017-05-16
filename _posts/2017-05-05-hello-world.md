@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Hello World
-comments: true
 ---
 
 Howdy! This is just an example post.
