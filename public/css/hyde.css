@@ -199,7 +199,7 @@ button:active, button:hover, button:focus,
 
 .sidebar-nav__toggle {
   position: absolute;
-  top: 1rem;
+  top: 1.5rem;
   right: .5rem;
   display: flex;
   flex-direction: column;
@@ -235,7 +235,7 @@ button:active, button:hover, button:focus,
   transition: all ease-in 200ms;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 55em) {
   .sidebar-nav__toggle {
     display: none;
   }
@@ -261,11 +261,13 @@ button:active, button:hover, button:focus,
 
 /* About section */
 .sidebar-about h1 {
-  color: #fff;  
-  margin-top: 0;
+  display: inline;
+  color: #fff;
+  margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: left;
+  vertical-align: middle;
 }
 
 /* Lead section */
@@ -275,7 +277,12 @@ button:active, button:hover, button:focus,
 
 /* Profile picture */
 .profile-picture {
-  display: none;
+  display: inline-block;
+  margin: 0;
+  margin-right: .5rem;
+  width: 3rem;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 /* Sidebar nav */
@@ -299,7 +306,7 @@ button:active, button:hover, button:focus,
   align-items: center;
   justify-content: center;
   background-color: #202020;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .sidebar-nav-item {
@@ -317,7 +324,7 @@ a.sidebar-nav-item:focus {
 }
 
 
-@media (min-width: 48em) {
+@media (min-width: 55em) {
   .sidebar {
     position: fixed;
     top: 0;
@@ -331,6 +338,7 @@ a.sidebar-nav-item:focus {
   /* About section */
   .sidebar-about h1 {
     color: #fff;
+    display: block;
     margin-top: 0;
     font-size: 2.2rem;
     font-weight: bold;
@@ -345,9 +353,9 @@ a.sidebar-nav-item:focus {
 
   /* Profile picture */
   .profile-picture {
-    display: inline;
+    display: block;
     margin: 0 auto 1rem;
-    border-radius: 50%;
+    width: auto;
   }
 
   /* Sidebar nav */
@@ -377,7 +385,7 @@ a.sidebar-nav-item:focus {
   margin-bottom: 5rem;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 55em) {
   .section {
     margin-bottom: 10rem;
   }
@@ -439,7 +447,7 @@ a.sidebar-nav-item:focus {
  * contents to the bottom of the sidebar in tablets and up.
  */
 
-@media (min-width: 48em) {
+@media (min-width: 55em) {
   .sidebar-sticky {
     position: absolute;
     top: 2rem;
@@ -460,7 +468,7 @@ a.sidebar-nav-item:focus {
   padding-bottom: 4rem;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 55em) {
   .content,
   .footer {
     max-width: 38rem;
@@ -484,7 +492,7 @@ a.sidebar-nav-item:focus {
  * Flip the orientation of the page by placing the `.sidebar` on the right.
  */
 
-@media (min-width: 48em) {
+@media (min-width: 55em) {
   .layout-reverse .sidebar {
     left: auto;
     right: 0;
