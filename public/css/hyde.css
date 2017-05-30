@@ -437,6 +437,39 @@ a.sidebar-nav-item:focus {
   box-shadow: .3rem .3rem 1rem rgba(45,45,45,.5);
 }
 
+.cta--main {
+  padding: 4rem 1rem;
+  min-height: 87vh;
+}
+
+.cta--main .call {
+  line-height: 2;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.cta--main .i-scroll-down {
+  animation-duration: 1.5s;
+}
+
+.cta--main .i-scroll-down:before {
+  content: '➤';
+  display: block;
+  transform: rotate(90deg);
+  color: #fff;
+}
+
+@media (min-width: 55em) {
+  .cta--main {
+    margin-left: 18rem;
+    min-height: 100vh;
+  }
+
+  .cta--main .call {
+    font-style: 2rem;
+  }
+}
+
 
 /* Posts */
 .post-title {

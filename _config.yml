@@ -13,13 +13,13 @@ permalink:        pretty
 # Setup
 title:            Diego Versiani
 tagline:          'Passionate Web Developer'
-description:      'I develop <u>Responsive WordPress</u> websites for meaningful user experiences.'
-url:              http://diegoversiani.me
+description:      'I make<br>Fast WordPress Websites<br>for any screen size.'
+url:              https://diegoversiani.me
 baseurl:          /
 
 author:
   name:           'Diego Versiani'
-  email:            diegoversiani@gmail.com
+  email:           diegoversiani@gmail.com
 
 pagination:
   limit:          false
