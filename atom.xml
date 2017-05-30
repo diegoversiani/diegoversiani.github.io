@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Diego Versiani</title>
- <link href="http://diegoversiani.me/atom.xml" rel="self"/>
- <link href="http://diegoversiani.me/"/>
- <updated>2017-05-28T19:04:16+00:00</updated>
- <id>http://diegoversiani.me</id>
+ <link href="https://diegoversiani.me/atom.xml" rel="self"/>
+ <link href="https://diegoversiani.me/"/>
+ <updated>2017-05-30T13:16:04+00:00</updated>
+ <id>https://diegoversiani.me</id>
  <author>
    <name>Diego Versiani</name>
    <email>diegoversiani@gmail.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Hello World</title>
-   <link href="http://diegoversiani.me/2017/05/05/hello-world/"/>
+   <link href="https://diegoversiani.me/2017/05/05/hello-world/"/>
    <updated>2017-05-05T00:00:00+00:00</updated>
-   <id>http://diegoversiani.me/2017/05/05/hello-world</id>
+   <id>https://diegoversiani.me/2017/05/05/hello-world</id>
    <content type="html">&lt;p&gt;Howdy! This is just an example post.&lt;/p&gt;
 
 &lt;p&gt;I’ll be posting real content soon, stay tuned!&lt;/p&gt;

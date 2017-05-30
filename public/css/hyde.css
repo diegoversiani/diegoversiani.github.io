@@ -296,6 +296,7 @@ button:active, button:hover, button:focus,
 }
 
 .menu-open .sidebar-nav {
+  z-index: 10;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -411,15 +412,15 @@ a.sidebar-nav-item:focus {
   padding: 1rem;
   background-color: #268bd2;
   background-image: linear-gradient(135deg, #268bd2 0%,#26d2c3 100%);
-  color: #000;
+  color: #fff;
   box-shadow: 0 0 .2rem rgba(80, 80, 80, .2);
   text-align: center;
   transition: all 100ms ease-in;
 }
 
 .cta .call {
-  margin-bottom: 2rem;
   color: #fff;
+  margin-bottom: 2rem;
 }
 
 .cta .action {
@@ -435,6 +436,40 @@ a.sidebar-nav-item:focus {
   background-color: #fff;
   color: #268bd2;
   box-shadow: .3rem .3rem 1rem rgba(45,45,45,.5);
+}
+
+.cta--main {
+  padding: 4rem 1rem;
+  min-height: 87vh;
+}
+
+.cta--main .call {
+  line-height: 2;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.cta--main .i-scroll-down {
+  animation-duration: 1.5s;
+}
+
+.cta--main .i-scroll-down:before {
+  content: '➤';
+  display: block;
+  transform: rotate(90deg);
+  color: #fff;
+}
+
+@media (min-width: 55em) {
+  .cta--main {
+    padding: 4rem;
+    margin-left: 18rem;
+    min-height: 100vh;
+  }
+
+  .cta--main .call {
+    font-style: 2rem;
+  }
 }
 
 
@@ -483,19 +518,13 @@ a.sidebar-nav-item:focus {
 @media (min-width: 55em) {
   .content,
   .footer {
-    max-width: 38rem;
-    margin-left: 20rem;
-    margin-right: 2rem;
+    margin: auto;
+    padding-left: 20rem;
+    padding-right: 2rem;
+    max-width: 60rem;
   }
 }
 
-@media (min-width: 64em) {
-  .content,
-  .footer {
-    margin-left: 22rem;
-    margin-right: 4rem;
-  }
-}
 
 
 /*
