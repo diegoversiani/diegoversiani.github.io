@@ -462,6 +462,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 55em) {
   .cta--main {
+    padding: 4rem;
     margin-left: 18rem;
     min-height: 100vh;
   }
