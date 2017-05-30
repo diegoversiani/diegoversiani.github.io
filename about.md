@@ -5,17 +5,18 @@ title: About
 
 ### Hi, I'm Diego Versiani
 
+I make **Fast WordPress Websites** for any screen size.
 
-A Passionate **WordPress Developer** with over 10 years experience.
+Since over 10 years I do what I love while helping [my clients]({{ site.baseurl }}work) give their clients a better web experience.
 
-I love to create stuff, it can be websites, houses, the interior of my motorhome (Matilda) or delicious meals. I like traveling, hiking, baking and fermenting food in jars.
+**About myself**: I love to make things, it can be websites, houses, the interior of my motorhome (Matilda) or delicious meals. I like traveling, hiking, baking and fermenting food in jars.
 
 I'm passionate about sustainability and alternative energy solutions. I follow an _almost_ vegan diet and a minimalist lifestyle.
 
 
 ### What will you find here?
 
-I post about code, my [side projects]({{ site.url }}#side-projects) and other things I love.
+I post about code, my [side projects]({{ site.baseurl }}projects) and other things I love.
 
 
 ### Hire Me, or just say hi!
