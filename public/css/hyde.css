@@ -296,6 +296,7 @@ button:active, button:hover, button:focus,
 }
 
 .menu-open .sidebar-nav {
+  z-index: 10;
   position: fixed;
   top: 0;
   bottom: 0;
