@@ -428,3 +428,638 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+
+
+
+
+
+
+
+/*
+ *  __                  __
+ * /\ \                /\ \
+ * \ \ \___   __  __   \_\ \     __
+ *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+ *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+ *    \ \_\ \_\/`____ \ \___,_\ \____\
+ *     \/_/\/_/`/___/> \/__,_ /\/____/
+ *                /\___/
+ *                \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ *
+ * Modified by Diego Versiani
+ */
+
+
+/*
+ * Contents
+ *
+ * Z-INDEX
+ * Global resets
+ * Forms
+ * Buttons
+ * Sidebar
+ * Footer
+ * CTA - Call To Action
+ * Section
+ * Posts
+ * Container
+ * Reverse layout
+ * Messages
+ */
+
+
+/*
+* Z-INDEX
+*/
+.sidebar-nav__toggle {
+  z-index: 20;
+}
+
+.sidebar-nav-container {
+  z-index: 10;
+}
+
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+html {
+  font-family: "Dosis", "Roboto Condensed", "Ubuntu Condensed", serif;
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.5px;
+}
+
+
+
+/* Forms */
+input,
+textarea,
+select {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  border: 1px solid #808080;
+  border-radius: .2rem;
+  background-color: #fff;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: inherit;
+  transition: all 100ms ease-in;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+  border: 1px solid #268bd2;
+  box-shadow: 0 0 .5rem rgba(38,139,210,.5);
+}
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  min-height: 6rem;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin: 0;
+}
+
+/*Removes awkward default styles on some inputs for iOS*/
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus {
+  outline: 0;
+  border: 1px solid #268bd2;
+}
+
+label,
+legend {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal;
+}
+
+
+
+/* Buttons */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+  width: auto;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: .2rem;
+  background-color: #268bd2;
+  color: #fff;
+  font-size: .8rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: .2rem .2rem .2rem rgba(45, 45, 45, .2);
+  cursor: pointer;
+  transition: all 100ms ease-in;
+}
+
+input[type="button"]:active, input[type="button"]:hover, input[type="button"]:focus
+input[type="submit"]:active, input[type="submit"]:hover, input[type="submit"]:focus
+input[type="reset"]:active, input[type="reset"]:hover, input[type="reset"]:focus
+button:active, button:hover, button:focus,
+.button:active, .button:hover, .button:focus {
+  background-color: #1e6fa8;
+  box-shadow: .3rem .3rem 1rem rgba(45,45,45,.5);
+}
+
+.button-container {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar-nav__toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-nav__toggle,
+.sidebar-nav__toggle:active,
+.sidebar-nav__toggle:focus,
+.sidebar-nav__toggle:hover {
+  background: transparent;
+  color: #fff;
+  box-shadow: initial;
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+}
+
+.sidebar-nav__toggle:active span,
+.sidebar-nav__toggle:focus span,
+.sidebar-nav__toggle:hover span,
+.menu-open .sidebar-nav__toggle span {
+  background: #fff;
+}
+
+.sidebar-nav__toggle span {
+  display: block;
+  width: 1.5rem;
+  height: .1rem;
+  margin-top: .2rem;
+  background-color: #fff;
+  transition: all ease-in 200ms;
+}
+
+@media (min-width: 55em) {
+  .sidebar-nav__toggle {
+    display: none;
+  }
+}
+
+
+
+.sidebar {
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 0;
+  color: rgba(255,255,255,.5);
+  background-color: #202020;
+}
+
+
+
+/* Sidebar links */
+.sidebar a {
+  color: #fff;
+}
+
+/* About section */
+.sidebar-about h1 {
+  display: inline;
+  color: #fff;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Lead section */
+.sidebar-about .lead {
+  display: none;
+}
+
+/* Profile picture */
+.profile-picture {
+  display: inline-block;
+  margin: 0;
+  margin-right: .5rem;
+  width: 3rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  display: none;
+}
+
+.menu-open {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu-open .sidebar-nav {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #202020;
+  font-size: 1.5rem;
+}
+
+.sidebar-nav-item {
+  display: block;
+  line-height: 1.75;
+}
+
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+
+@media (min-width: 55em) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2rem 1rem;
+    width: 18rem;
+    text-align: center;
+  }
+
+  /* About section */
+  .sidebar-about h1 {
+    color: #fff;
+    display: block;
+    margin-top: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  /* Lead section */
+  .sidebar-about .lead {
+    display: inline;
+    font-size: 1rem;
+  }
+
+  /* Profile picture */
+  .profile-picture {
+    display: block;
+    margin: 0 auto 1rem;
+    width: auto;
+  }
+
+  /* Sidebar nav */
+  .sidebar-nav {
+    position: static;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+
+/*
+* FOOTER
+*/
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+
+
+/* Section */
+.section {
+  margin-bottom: 5rem;
+}
+
+@media (min-width: 55em) {
+  .section {
+    margin-bottom: 10rem;
+  }
+}
+
+.section-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* Call To Action */
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4em;
+  padding: 1rem;
+  background-color: #268bd2;
+  background-image: linear-gradient(135deg, #268bd2 0%,#26d2c3 100%);
+  color: #fff;
+  box-shadow: 0 0 .2rem rgba(80, 80, 80, .2);
+  text-align: center;
+  transition: all 100ms ease-in;
+}
+
+.cta .call {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.cta .action {
+  margin-bottom: 1.5rem;
+}
+
+.cta .button {
+  background-color: #fff;
+  color: #268bd2;
+}
+
+.cta .button:active, .cta .button:hover, .cta .button:focus {
+  background-color: #fff;
+  color: #268bd2;
+  box-shadow: .3rem .3rem 1rem rgba(45,45,45,.5);
+}
+
+.cta--main {
+  padding: 1rem;
+  min-height: 87vh;
+}
+
+.cta--main .call {
+  line-height: 2;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.cta--main .i-scroll-down {
+  animation-duration: 1.5s;
+}
+
+.cta--main .i-scroll-down:before {
+  content: '➤';
+  display: block;
+  transform: rotate(90deg);
+  color: #fff;
+}
+
+@media (min-width: 55em) {
+  .cta--main {
+    padding: 4rem;
+    margin-left: 18rem;
+    min-height: 100vh;
+  }
+
+  .cta--main .call {
+    font-style: 2rem;
+  }
+}
+
+
+/* Posts */
+.post-title {
+  font-size: 1.5rem;
+}
+
+.post-featured-image {
+  box-shadow: 0 0 1rem rgba(45,45,45,.2);
+  transition: all 150ms ease-in;
+}
+
+.post-featured-image:hover {
+  box-shadow: 0 0 1.2rem rgba(45,45,45,.5);
+}
+
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@media (min-width: 55em) {
+  .sidebar-sticky {
+    position: absolute;
+    top: 2rem;
+    right:  1rem;
+    left:   1rem;
+  }
+}
+
+
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+.content {
+  padding-top:    4rem;
+  padding-bottom: 4rem;
+}
+
+@media (min-width: 55em) {
+  .content,
+  .footer {
+    margin: auto;
+    padding-left: 20rem;
+    padding-right: 2rem;
+    max-width: 60rem;
+  }
+}
+
+
+
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` on the right.
+ */
+
+@media (min-width: 55em) {
+  .layout-reverse .sidebar {
+    left: auto;
+    right: 0;
+  }
+  .layout-reverse .content {
+    margin-left: 2rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .layout-reverse .content {
+    margin-left: 4rem;
+    margin-right: 22rem;
+  }
+}
+
+
+
+/* Messages */
+.message {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d3ffce;
+}
+
+.message.loading {
+  min-height: 3rem;
+}
+
+.message.loading span {
+  display: block;
+  width: 3rem;
+  height: .2rem;
+  margin-top: .2rem;
+  margin-left: 50%;
+  background-color: #909090;
+  animation: loading-tube ease-out infinite;
+}
+
+.message.loading span:nth-child(1) { animation-duration: 400ms; }
+.message.loading span:nth-child(2) { animation-duration: 700ms; }
+.message.loading span:nth-child(3) { animation-duration: 1000ms; }
+
+
+
+@keyframes loading-tube {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: .1; transform: translateX(-100%); }
+}
+
+
+
+
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2017 Daniel Eden
+ */
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
