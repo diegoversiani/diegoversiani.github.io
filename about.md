@@ -13,16 +13,12 @@ Since over 10 years I do what I love while helping [my clients]({{ site.baseurl 
 
 I'm passionate about sustainability and alternative energy solutions. I follow an _almost_ vegan diet and a minimalist lifestyle.
 
+### Side Projects
 
-### What will you find here?
+I have started some open source [projects]({{ site.baseurl }}projects).
 
-I post about code, my [side projects]({{ site.baseurl }}projects) and other things I love.
-
-
-### Hire Me, or just say hi!
+### Hire Me!
 
 I'm available to work on a project or per hour basis.
 
-And I'm always looking for a coding buddy, so get in touch!
-
-<a href="{{ site.url }}/contact/" class="button">Send a message</a>
+<a href="{{ site.url }}/contact/" class="button">Get in touch</a>
