@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "3.4.3"
+gem "jekyll"
 gem "html-proofer"
 gem "octopress-paginate"
 gem "jekyll-gist"

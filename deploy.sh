@@ -7,7 +7,7 @@ SOURCE_BRANCH="travis-build"
 TARGET_BRANCH="master"
 
 function doCompile {
-  jekyll build -d out/
+  bundle exec jekyll build -d out/
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
